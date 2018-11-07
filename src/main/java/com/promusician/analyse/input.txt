@@ -1,0 +1,21 @@
+package com.promusician.player;
+
+public class ProMusician {
+
+    public static void main(String[] args) {
+        //创建Metronome基础乐队
+        Metronome metronome=new Metronome();
+        //设置BPM，即default为一秒一拍
+        metronome.setBPM(Metronome.DEFUALT_BPM);
+        metronome.setTempo(4);
+
+        Times t=new Times(5);
+
+        RideCymbal r=new RideCymbal();
+        r.setHit(1);
+
+        metronome.begin();
+
+
+    }
+}
