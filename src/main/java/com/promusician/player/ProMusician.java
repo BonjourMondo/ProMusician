@@ -14,7 +14,7 @@ public class ProMusician {
 
         //初始化乐器
         RideCymbal r=new RideCymbal();
-        r.setHit(1);
+        r.setBeat(1);
 
         //定义演奏规则
         Tips tips =new Tips() {

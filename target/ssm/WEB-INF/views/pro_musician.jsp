@@ -42,6 +42,40 @@
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="../../assets/js/myjs/dont_move.js"></script>
     <link rel="stylesheet" href="../../assets/css/procss/proCss.css">
+
+    <script>
+        function getandShowText(str){
+            var xmlhttp;
+            if (str.length==0){
+                document.getElementById("textHint").innerHTML="";
+                return;
+            }
+            if (window.XMLHttpRequest)
+            {
+                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                xmlhttp=new XMLHttpRequest();
+            }
+            else
+            {
+                // IE6, IE5 浏览器执行代码
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function()
+            {
+
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("textHint").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("POST","/textarea",true);
+            xmlhttp.setRequestHeader("Content-Type"
+                , "application/x-www-form-urlencoded");
+            // 发送请求
+            xmlhttp.send("str="+str);
+
+        }
+    </script>
 </head>
 
 
@@ -111,7 +145,7 @@
         </div>
         <div class="row">
             <div class="col-md-7">
-                <div class="contact-content">
+                <div class="contact-content" id="textHint">
 
 
                 </div>
@@ -129,6 +163,7 @@
                                 font-size: 13px ;
                                 line-height: 1.5;
                               "
+                            onkeyup="getandShowText(this.value)"
                             >
 package com.promusician.player;
 public class ProMusician {

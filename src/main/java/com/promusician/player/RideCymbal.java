@@ -3,13 +3,13 @@ package com.promusician.player;
 import com.promusician.player.Drums.Drums;
 
 public class RideCymbal implements Drums {
-    private int hit;
+    private int beat;
 
-    public int getHit() {
-        return hit;
+    public int getBeat() {
+        return beat;
     }
 
-    public void setHit(int hit) {
-        this.hit = hit;
+    public void setBeat(int beat) {
+        this.beat = beat;
     }
 }
