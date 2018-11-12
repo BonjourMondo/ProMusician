@@ -1,5 +1,8 @@
 package com.promusician.web;
 
+import com.promusician.service.AnalyserServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,20 +18,23 @@ import java.io.PrintWriter;
 @Controller
 @RequestMapping("/textarea")
 public class TextareaController {
-    static Logger logger= Logger.getLogger(TextareaController.class.getName());
+
+    @Autowired
+    @Qualifier("analyserservice")
+    private AnalyserServiceImpl analyserService;
 
     @RequestMapping(method = RequestMethod.POST)
     public void getText( HttpServletResponse response, HttpServletRequest request, Model model) throws IOException {
-        //response
-        response.setContentType("text/html;charset=utf-8");
-        PrintWriter out=response.getWriter();
-        out.println("恭喜");
-        out.flush();
-        out.close();
         //request
         request.setCharacterEncoding("UTF-8");
-        String s=request.getParameter("str");
-        logger.debug(s);
+        String s = request.getParameter("str");
+        boolean response_state = analyserService.analyseInputText(s);
 
+        //response
+        response.setContentType("text/html;charset=utf-8");
+        PrintWriter out = response.getWriter();
+        out.println(analyserService.returnOutPutText(response_state));
+        out.flush();
+        out.close();
     }
 }

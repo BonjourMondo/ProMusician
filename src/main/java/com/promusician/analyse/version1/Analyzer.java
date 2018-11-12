@@ -12,6 +12,7 @@ import java.io.IOException;
  * @author LeesangHyuk
  * @version 1.0
  */
+@Deprecated
 public class Analyzer {
     private String keyWords[] = { "abstract", "boolean", "break", "byte",
             "case", "catch", "char", "class", "continue", "default", "do",

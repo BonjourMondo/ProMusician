@@ -1,5 +1,6 @@
 package com.promusician.analyse.version2;
 
+@Deprecated
 public class KeyTypes {
 
     /** 运算符*/

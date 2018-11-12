@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.promusician.web")
+@ComponentScan(basePackages = "com.promusician.web")
 public class WebConfig extends WebMvcConfigurerAdapter {
     /*
     * 此处配置视图解析器

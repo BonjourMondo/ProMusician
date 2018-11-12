@@ -10,8 +10,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 /**
  * 文件操作
- * @author zhangyu
+ * @author LeesangHyuk
  */
+
+@Deprecated
 public class FileUtil {
     /**
      * 文件读取到缓冲区

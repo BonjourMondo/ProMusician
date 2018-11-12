@@ -42,9 +42,9 @@
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="../../assets/js/myjs/dont_move.js"></script>
     <link rel="stylesheet" href="../../assets/css/procss/proCss.css">
-
+    <script src="../../assets/js/myjs/show_get_text.js"></script>
     <script>
-        function getandShowText(str){
+        function getandShowText_t(str){
             var xmlhttp;
             if (str.length==0){
                 document.getElementById("textHint").innerHTML="";
@@ -73,9 +73,9 @@
                 , "application/x-www-form-urlencoded");
             // 发送请求
             xmlhttp.send("str="+str);
-
         }
     </script>
+
 </head>
 
 
@@ -135,7 +135,7 @@
 </header>
 <!-- header area end -->
 <!-- contact area start -->
-<iframe src="<pro:url value="/drums"/>" style="position: absolute;margin-top: 10px;margin-left: 200px;z-index: 1000;"
+<iframe src="<pro:url value="/drums"/>" id="drums_page" style="position: absolute;margin-top: 10px;margin-left: 200px;z-index: 1000;"
         frameborder="0" width="220" scrolling="No"
         height="200" leftmargin="0" topmargin="0"></iframe>
 <div class="contact-area bg_dark ptb--100">
@@ -145,9 +145,21 @@
         </div>
         <div class="row">
             <div class="col-md-7">
-                <div class="contact-content" id="textHint">
+                <div class="row textHint" id="textHint">
+                    <div class="col-md-12">
+                        <img class="" style="height: 30px;width: 30px" src="assets/images/proimage/kick.png" alt="Kick" onclick="img_kick();">
+                        <span>RideCymbal r=new RideCymbal();</span>
+                    </div>
 
+                    <div class="col-md-12">
+                        <img class="" style="height: 30px;width: 30px" src="assets/images/proimage/kick.png" alt="Kick" onclick="img_kick();">
+                        <span>RideCymbal r=new RideCymbal();</span>
+                    </div>
 
+                    <div class="col-md-12">
+                        <img class="" style="height: 30px;width: 30px" src="assets/images/proimage/crash.png" alt="Kick" onclick="img_crash();">
+                        <span>RideCymbal r=new RideCymbal();</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
@@ -163,7 +175,7 @@
                                 font-size: 13px ;
                                 line-height: 1.5;
                               "
-                            onkeyup="getandShowText(this.value)"
+                            onkeyup="getandShowText_t(this.value)"
                             >
 package com.promusician.player;
 public class ProMusician {
@@ -216,7 +228,7 @@ public class ProMusician {
                         </a>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" style="background: #fe942f;">
+                        <a href="#" style="background: #fe942f;" onclick="pro_close()">
 
                             Start
                         </a>

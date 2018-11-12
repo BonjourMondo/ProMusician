@@ -8,6 +8,8 @@ package com.promusician.analyse.version2;
  * @author LeesangHyuk
  * @version 2.0
  */
+
+@Deprecated
 public class TestLexer extends TypeUtil{
     private StringBuffer buffer = new StringBuffer(); // 缓冲区
     private int i = 0;
@@ -135,5 +137,13 @@ public class TestLexer extends TypeUtil{
         System.out.println("("+file+", "+s+")");
         file = "("+temp+", "+s+")"+"\r\n";
         FileUtil.writeFile(file);
+    }
+
+    public StringBuffer getBuffer() {
+        return buffer;
+    }
+
+    public void setBuffer(String str) {
+        this.buffer.append(str);
     }
 }

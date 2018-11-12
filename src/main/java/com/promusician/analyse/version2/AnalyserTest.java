@@ -1,5 +1,6 @@
 package com.promusician.analyse.version2;
 
+@Deprecated
 public class AnalyserTest {
     public static void main(String[] args) {
 		/*创建词法分析类*/

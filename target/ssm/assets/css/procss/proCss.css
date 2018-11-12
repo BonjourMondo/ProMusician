@@ -22,3 +22,16 @@
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
 }
+
+.textHint{
+    user-select: none;
+}
+
+.textHint img{
+    width: 10%;
+}
+.textHint img:hover{
+    background-color: #fecc2f;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}

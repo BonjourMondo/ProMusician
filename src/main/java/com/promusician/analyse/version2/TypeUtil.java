@@ -6,6 +6,8 @@ import java.lang.reflect.Field;
  * 对读取字符分类相关操作
  * @author LeesangHyuk
  */
+
+@Deprecated
 public class TypeUtil {
     private final String keyWords[] = { "abstract", "boolean", "break", "byte",
             "case", "catch", "char", "class", "continue", "default", "do",
