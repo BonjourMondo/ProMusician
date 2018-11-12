@@ -7,44 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de3622e1-c593-437d-a03b-eebcfb99303c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/KeyTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/StringUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TypeUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/aspect/TextareaLogImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/config/AspectConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/config/ServiceConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/service/AnalyserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/service/AnalyserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/myjs/show_get_text.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/config/properties/db.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/config/properties/db.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/analyse/version2/FileUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/analyse/version2/FileUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/analyse/version2/TestLexer.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/analyse/version2/TestLexer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/web/TextareaController.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/web/TextareaController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/analyse/version2/FileUtil.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/analyse/version2/FileUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/analyse/version2/TestLexer.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/analyse/version2/TestLexer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/web/TextareaController.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/web/TextareaController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/analyse/version3/TextareaLexer.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/analyse/version3/TextareaLexer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/analyse/version3/TextareaLexer.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/analyse/version3/TextareaLexer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/input.txt" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/input.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/output.txt" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/output.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version1/Analyzer.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version1/Analyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/AnalyserTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/AnalyserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/FileUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/FileUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/KeyTypes.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/KeyTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/TestLexer.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/TestLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/TypeUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version2/TypeUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/config/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/web/TextareaController.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/web/TextareaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/web/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/web/HomeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/procss/proCss.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/procss/proCss.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/analyse/input.txt" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/analyse/input.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/pro_musician.jsp" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/pro_musician.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/assets/css/procss/proCss.css" afterPath="$PROJECT_DIR$/target/ssm/assets/css/procss/proCss.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,23 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TextareaController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/web/TextareaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="30" column="57" lean-forward="false" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AnalyserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/AnalyserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="300">
+              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,8 +43,38 @@
       <file leaf-file-name="pro_musician.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="178" column="29" lean-forward="true" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
+            <state relative-caret-position="375">
+              <caret line="178" column="31" lean-forward="true" selection-start-line="178" selection-start-column="31" selection-end-line="178" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/web/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2375">
+              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -125,23 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/StringUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TextareaLexer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="101" column="13" lean-forward="true" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+            <state relative-caret-position="343">
+              <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,21 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TypeUtil.java">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1125">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/RootConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -229,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/procss/textarea.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/magnific-popup.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/pro_programmer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/procss/button.css" />
@@ -247,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/myjs/drumbeat.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/atom2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drums.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/promusician/web/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/player/RideCymbal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/player/Drums/Drums.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/player/ProMusician.java" />
@@ -256,8 +221,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_drums.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/procss/proCss.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/myjs/show_get_text.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/promusician/analyse/input.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TestLexer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/service/AnalyserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/config/AnalyseConfig.java" />
@@ -279,7 +242,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/config/ServiceConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/service/AnalyserServiceImpl.java" />
+        <option value="E:/SoftwareEngineering/apache-maven-3.2.3/myrepository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/promusician/analyse/input.txt" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/promusician/web/HomeController.java" />
       </list>
     </option>
   </component>
@@ -377,16 +344,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="promusician" type="462c0819:PsiDirectoryNode" />
               <item name="analyse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="promusician" type="462c0819:PsiDirectoryNode" />
-              <item name="analyse" type="462c0819:PsiDirectoryNode" />
-              <item name="version3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
@@ -722,12 +679,12 @@
       <workItem from="1541640073239" duration="13950000" />
       <workItem from="1541661456857" duration="657000" />
       <workItem from="1541750903720" duration="5230000" />
-      <workItem from="1541991592303" duration="11647000" />
+      <workItem from="1541991592303" duration="13796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94506000" />
+    <option name="totallyTimeSpent" value="96655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -775,18 +732,31 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/swiper.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="3621" lean-forward="false" selection-start-line="11" selection-start-column="3605" selection-end-line="11" selection-end-column="3621" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/typography.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-790">
@@ -905,14 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/web/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -947,22 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/SoftwareEngineering/apache-maven-3.2.3/myrepository/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -991,14 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-585">
           <caret line="307" column="29" lean-forward="true" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1109,6 +1047,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/web/TextareaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="30" column="57" lean-forward="false" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/KeyTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/AspectConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1129,56 +1095,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/KeyTypes.java">
+    <entry file="jar://E:/SoftwareEngineering/apache-maven-3.2.3/myrepository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/AnalyserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="178" column="29" lean-forward="true" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
+        <state relative-caret-position="375">
+          <caret line="178" column="31" lean-forward="true" selection-start-line="178" selection-start-column="31" selection-end-line="178" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/web/TextareaController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/web/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="30" column="57" lean-forward="false" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/AnalyserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="2375">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/analyse/version3/TextareaLexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="101" column="13" lean-forward="true" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+        <state relative-caret-position="343">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

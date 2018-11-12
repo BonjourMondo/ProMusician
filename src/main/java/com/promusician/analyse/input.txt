@@ -9,8 +9,8 @@ public class ProMusician {
         //初始化循环次数
         Times t=new Times(5);
         //初始化乐器
-        RideCymbal r=new RideCymbal();
-        r.setHit(1);
+        Crash r=new Crash();
+        r.setBeat(1);
         //定义演奏规则
         Tips tips =new Tips() {
             @Override

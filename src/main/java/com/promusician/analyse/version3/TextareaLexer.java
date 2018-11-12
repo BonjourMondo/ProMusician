@@ -24,6 +24,7 @@ public class TextareaLexer extends TypeUtil{
 
     public void analyse(){
         strToken = ""; // 置strToken为空串
+        System.out.println(buffer.length());
         while (i < buffer.length()){
             getChar();
             getBC();
