@@ -30,7 +30,6 @@ function getandShowText(str){
 }
 
 
-
 function img_crash() {
     var iframe = document.getElementById('drums_page').contentWindow;
     iframe.crash();
@@ -59,3 +58,10 @@ function img_rightTom() {
     var iframe = document.getElementById('drums_page').contentWindow;
     iframe.rightTom();
 }
+
+
+
+
+
+
+

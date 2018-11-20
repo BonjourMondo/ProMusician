@@ -14,3 +14,5 @@ var keyFunc=function(e){
     }
 }
 document.body.onkeydown=keyFunc;
+
+

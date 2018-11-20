@@ -43,38 +43,7 @@
     <script src="../../assets/js/myjs/dont_move.js"></script>
     <link rel="stylesheet" href="../../assets/css/procss/proCss.css">
     <script src="../../assets/js/myjs/show_get_text.js"></script>
-    <script>
-        function getandShowText_t(str){
-            var xmlhttp;
-            if (str.length==0){
-                document.getElementById("textHint").innerHTML="";
-                return;
-            }
-            if (window.XMLHttpRequest)
-            {
-                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-                xmlhttp=new XMLHttpRequest();
-            }
-            else
-            {
-                // IE6, IE5 浏览器执行代码
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange=function()
-            {
-
-                if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                    document.getElementById("textHint").innerHTML=xmlhttp.responseText;
-                }
-            }
-            xmlhttp.open("POST","/textarea",true);
-            xmlhttp.setRequestHeader("Content-Type"
-                , "application/x-www-form-urlencoded");
-            // 发送请求
-            xmlhttp.send("str="+str);
-        }
-    </script>
+    <script src="../../assets/js/myjs/tap.js"></script>
 
 </head>
 
@@ -175,7 +144,7 @@
                                 font-size: 13px ;
                                 line-height: 1.5;
                               "
-                            onkeyup="getandShowText_t(this.value)"
+                            onkeyup="getandShowText(this.value);tap()"
                             >${template_promusician}</textarea>
                 </form>
                 <script type="text/javascript">
@@ -209,7 +178,7 @@
                         </a>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" style="background: #fe832f;">
+                        <a href="<pro:url value="/textarea/commit"/>" style="background: #fe832f;">
 
                             Commit
                         </a>
