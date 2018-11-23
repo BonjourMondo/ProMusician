@@ -1,7 +1,13 @@
 package com.promusician.kafka;
 
+import com.promusician.mapper.MusicMapper;
+import com.promusician.model.Music;
+import com.promusician.service.CommitDatebaseService;
 import org.apache.kafka.clients.consumer.*;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import java.util.Collections;
 import java.util.Properties;
@@ -11,6 +17,11 @@ public class KafkaMessageConsumer extends Thread{
     public static final Logger log= Logger.getLogger(KafkaMessageConsumer.class.getName());
     private Properties prop;
     private final KafkaConsumer<String, String> consumer;
+
+    @Autowired
+    @Qualifier("commitdatebaseserivce")
+    private CommitDatebaseService commitDatebaseService;
+
     public KafkaMessageConsumer(){
         prop = KafkaXmlConfig.getConsumerProp();
         consumer = new KafkaConsumer<>(prop);
@@ -27,6 +38,8 @@ public class KafkaMessageConsumer extends Thread{
                 ConsumerRecords<String,String> records=consumer.poll(100);
                 for (ConsumerRecord<String,String> record: records) {
                     log.debug(record.topic()+" "+record.value());
+                    Music music=commitDatebaseService.selectByid(1);
+                    log.debug("the select id's name is "+music.getName());
                 }
                 try {
                     consumer.commitAsync();

@@ -52,7 +52,7 @@
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
                                 <li class="active">
-                                    <a href="WEB-INF/views/index.jsp">Home</a>
+                                    <a href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li>
                                     <a href="WEB-INF/views/pro_programmer.jsp">Programmer</a>
@@ -87,7 +87,7 @@
         <div class="music-content">
             <h2>Your Music Career
                 <br> Starts Here</h2>
-            <a href="WEB-INF/views/pro_musician.jsp">
+            <a href="<pro:url value="/musician"/>">
                 <i class="fa fa-play"></i>
             </a>
         </div>
