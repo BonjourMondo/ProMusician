@@ -1,6 +1,9 @@
 package com.promusician.model;
 
-public class ProMusician {
+import java.io.Serializable;
+
+public class Music implements Serializable{
+    private static final long serialVersionUID = 3497672869021101997L;
     private String Id;
     private String name;
     private String title;

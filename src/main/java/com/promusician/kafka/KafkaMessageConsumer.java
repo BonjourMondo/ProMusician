@@ -15,18 +15,18 @@ public class KafkaMessageConsumer extends Thread{
         prop = KafkaXmlConfig.getConsumerProp();
         consumer = new KafkaConsumer<>(prop);
         consumer.subscribe(Collections.singletonList("Music"));
-        log.error("!!!!!!!!!!");
+        log.debug("kafka consumer start");
         this.start();
     }
 
     @Override
     public void run() {
-        log.error("start thread");
+        log.debug("start thread");
         try {
             while (true){
                 ConsumerRecords<String,String> records=consumer.poll(100);
                 for (ConsumerRecord<String,String> record: records) {
-                    log.error(record.topic()+" "+record.value());
+                    log.debug(record.topic()+" "+record.value());
                 }
                 try {
                     consumer.commitAsync();

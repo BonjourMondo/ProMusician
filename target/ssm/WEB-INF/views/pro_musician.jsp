@@ -166,7 +166,7 @@
                         </a>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" style="background: #feab2f;">
+                        <a href="<pro:url value="/textarea/test"/>" style="background: #feab2f;">
 
                             Debug
                         </a>

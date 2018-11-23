@@ -21,9 +21,10 @@ public class KafkaMessageProducer {
     }
 
     public void send()throws Exception{
+        //file_path格式为 name-title:date  用于以后的识别
         ProducerRecord<String,String> record= new ProducerRecord<String, String>
                 ("Music","text",
-                        "Promusician");
+                        "file_path:Promusician");
         producer.send(record, new Callback() {
             @Override
             public void onCompletion(RecordMetadata recordMetadata, Exception e) {

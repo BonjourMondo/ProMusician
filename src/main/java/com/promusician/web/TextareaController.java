@@ -1,9 +1,13 @@
 package com.promusician.web;
 
 import com.promusician.kafka.KafkaMessageConsumer;
+import com.promusician.mapper.MusicMapper;
+import com.promusician.model.Music;
 import com.promusician.service.AnalyserServiceImpl;
 import com.promusician.service.CommitService;
 import com.promusician.service.CommitServiceImpl;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -31,6 +35,7 @@ public class TextareaController {
     @Qualifier("commitservice")
     private CommitServiceImpl commitService;
 
+
     @RequestMapping(method = RequestMethod.POST,produces = "text/html;charset=UTF-8")
     public void getText(HttpServletResponse response,
                         @RequestParam(value = "str") String code, Model model) throws IOException {
@@ -51,5 +56,10 @@ public class TextareaController {
         return "success_commit";
     }
 
+
+    @RequestMapping(value = "/test")
+    public String test(){
+        return "success_commit";
+    }
 
 }
