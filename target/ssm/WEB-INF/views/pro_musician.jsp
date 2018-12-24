@@ -40,11 +40,32 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--不可滚动-->
     <script src="../../assets/js/myjs/dont_move.js"></script>
+    <!--取消text右边的滑动条-->
     <link rel="stylesheet" href="../../assets/css/procss/proCss.css">
-    <script src="../../assets/js/myjs/show_get_text.js"></script>
+    <%--<script src="../../assets/js/myjs/show_get_text.js"></script>--%>
+    <!--alt表示tab键来-->
     <script src="../../assets/js/myjs/tap.js"></script>
+<script>
+//    ajax传数据
+    function getAndShow(code) {
+        $.ajax({
+            type: "POST",
+            url: "/textarea",
+            data: {str:code},
+            dataType: "json",
+            success: function(data){
+                document.getElementById("textHint").innerHTML=data.code;
+            },
+            error:function(data){
+               //donothing
+            }
+        });
+    }
 
+
+</script>
 </head>
 
 
@@ -134,17 +155,17 @@
             <div class="col-md-4">
                 <form>
                     <textarea
-                            id="codeTextarea" rows="20" cols="55" spellcheck="false"
+                            id="codeTextarea" rows="12" cols="45" spellcheck="false"
                             style="border:3px solid #453cad;
                                 background-color:transparent;
                                 color: honeydew;
                                 height: auto;
                                 resize:none;
                                 overflow-y: auto;
-                                font-size: 13px ;
-                                line-height: 1.5;
+                                font-size: 15px ;
+                                line-height: 1.98;
                               "
-                            onkeyup="getandShowText(this.value);tap()"
+                            onkeyup="getAndShow(this.value);tap()"
                             >${template_promusician}</textarea>
                 </form>
                 <script type="text/javascript">

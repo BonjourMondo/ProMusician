@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.promusician.web")
+@ComponentScan(basePackages = "com.promusician.controller")
 @ImportResource("classpath:/spring-mybatis.xml")
 public class WebConfig extends WebMvcConfigurerAdapter {
     /*

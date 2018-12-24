@@ -6,7 +6,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 
 @Configuration
-@ComponentScan(basePackages = {"com.promusician.aspect","com.promusician.web"})
+@ComponentScan(basePackages = {"com.promusician.aspect","com.promusician.controller"})
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class AspectConfig {
 }

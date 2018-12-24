@@ -1,0 +1,16 @@
+ bpm=60
+ times=10
+ i=10
+ while times>0{
+ 	  if i%2==0{
+     		    rhy{cr;hi}
+     	  }else{
+     		    rhy{sn;sm}
+     	  }
+     	  i=i+1
+     	  times=times-1
+     	  bpm=bpm+10
+ }
+ bpm
+ i
+ times
