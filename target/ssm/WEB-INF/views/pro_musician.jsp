@@ -47,7 +47,9 @@
     <%--<script src="../../assets/js/myjs/show_get_text.js"></script>--%>
     <!--alt表示tab键来-->
     <script src="../../assets/js/myjs/tap.js"></script>
-<script>
+    <!--左侧跳到指定位置-->
+    <script src="../../assets/js/myjs/my_scrollbar.js"></script>
+    <script>
 //    ajax传数据
     function getAndShow(code) {
         $.ajax({
@@ -56,7 +58,7 @@
             data: {str:code},
             dataType: "json",
             success: function(data){
-                document.getElementById("textHint").innerHTML=data.code;
+                document.getElementById("scrollOne").innerHTML=data.code;
             },
             error:function(data){
                //donothing
@@ -64,8 +66,110 @@
         });
     }
 
+    var oMyBar1;
+    window.onload = function () {
+        oMyBar1 = new MyScrollBar({
+            selId: 'wrapper1',
+            bgColor: 'rgba(50, 50, 50, 0.2)',
+            barColor: '#2E8EEA',
+            enterColor: '#056FD8',
+            enterShow: false,
+            borderRadius: 2
+        });
+        var t = document.getElementById('codeTextarea');
+        t.onclick = function () {
+            oMyBar1.setSize();
+            var v = t.value;
+            // 开始到光标位置的内容
+            var cv = '';
+            if ('selectionStart' in t) {
+                cv = v.substr(0, t.selectionStart);
+            } else {
+                var oSel = document.selection.createRange();
+                oSel.moveStart('character', -t.value.length);
+                cv = oSel.text;
+            }
+            // 获取当前是几行
+            var cl = cv.split('\n').length-4;
+            if(cl<0)
+                cl=1;
+            var s={
+                id:cl,
+                time: 400
+            };
+            oMyBar1.jump(s);
+        }
+    }
+    function barOnKeyUp() {
+        oMyBar1.setSize();
+//        alert("barOnKeyUp")
+        var t = document.getElementById('codeTextarea');
+        var v = t.value;
+        // 开始到光标位置的内容
+        var cv = '';
+        if ('selectionStart' in t) {
+            cv = v.substr(0, t.selectionStart);
+        } else {
+            var oSel = document.selection.createRange();
+            oSel.moveStart('character', -t.value.length);
+            cv = oSel.text;
+        }
+        // 获取当前是几行
+        var cl = cv.split('\n').length-4;
+        if(cl<0)
+            cl=1;
+//        alert(cl);
+        var s={
+            id:cl,
+            time: 400
+        };
+        oMyBar1.jump(s);
+    }
+    </script>
+    <style type="text/css">
+        .box {
+            width: 600px; height: 300px; border: 1px solid #444; margin: 10px auto; padding: 0; overflow: hidden;
+        }
+        .box1 {
+            padding: 20px;
+            /*overflow: auto;*/
+        }
+        .textbox{
+            border:3px solid #453cad;
+            background-color:transparent;
+            color: honeydew;
+            height: auto;
+            resize:none;
+            overflow-y: scroll;
+            font-size: 15px ;
+            line-height: 2;
+        }
+        .textbox::-webkit-scrollbar {
+            width: 5px;
+            height: 10px;
 
-</script>
+            background-color: #b5b1b1;
+
+        }
+        .textbox::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: black;
+
+        }
+
+
+
+
+        .textbox::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: #b5b1b1;
+        }
+
+
+
+    </style>
 </head>
 
 
@@ -135,20 +239,9 @@
         </div>
         <div class="row">
             <div class="col-md-7">
-                <div class="row textHint" id="textHint">
-                    <div class="col-md-12">
-                        <img class="" style="height: 30px;width: 30px" src="assets/images/proimage/kick.png" alt="Kick" onclick="img_kick();">
-                        <span>RideCymbal r=new RideCymbal();</span>
-                    </div>
-
-                    <div class="col-md-12">
-                        <img class="" style="height: 30px;width: 30px" src="assets/images/proimage/kick.png" alt="Kick" onclick="img_kick();">
-                        <span>RideCymbal r=new RideCymbal();</span>
-                    </div>
-
-                    <div class="col-md-12">
-                        <img class="" style="height: 30px;width: 30px" src="assets/images/proimage/crash.png" alt="Kick" onclick="img_crash();">
-                        <span>RideCymbal r=new RideCymbal();</span>
+                <div class='box box1' id='wrapper1'>
+                    <div class="scroll" id="scrollOne">
+                        <span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE 20</span><br id="p20"><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE2 </span><br><span id="1" style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br>
                     </div>
                 </div>
             </div>
@@ -156,16 +249,9 @@
                 <form>
                     <textarea
                             id="codeTextarea" rows="12" cols="45" spellcheck="false"
-                            style="border:3px solid #453cad;
-                                background-color:transparent;
-                                color: honeydew;
-                                height: auto;
-                                resize:none;
-                                overflow-y: auto;
-                                font-size: 15px ;
-                                line-height: 1.98;
-                              "
-                            onkeyup="getAndShow(this.value);tap()"
+                            class="textbox"
+                            onkeyup="getAndShow(this.value);tap();barOnKeyUp()"
+                            <%--onclick=""--%>
                             >${template_promusician}</textarea>
                 </form>
                 <script type="text/javascript">
