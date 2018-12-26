@@ -4,44 +4,71 @@ import com.promusician.stone.Lexer;
 import com.promusician.stone.token.Token;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 @Service("analyserservice")
 public class AnalyserServiceImpl implements AnalyserService {
+    ArrayList<String> instruments=new ArrayList<>(Arrays.asList("sn","fl","hi","bi","sm","ki","cr"));
 
     @Override
     public String analyseInputText(String str) {
         Lexer lexer = new Lexer(str);
         String responseText="";
 
-        int i=0;
+        int i=0;//表明行号
+        int add_space=0;//表明加空格个数
+        boolean toEnterLine=true;//表明后括号是否加空格，默认需要加
+
+        boolean first_bpm=true;
         for (Token t; (t = lexer.read()) != Token.EOF; ) {
-            if (t.getLineNumber()>i) {
-                i=t.getLineNumber();
-                responseText += "<span id=\""+i+"\">"+i + "</span>";
+            if (t.getLineNumber() > i) {
+                i = t.getLineNumber();
+                responseText += "<span class=\"span_lineNo\" id=\"" + i + "\">" + i + "&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+                if (toEnterLine&&t.getText().equalsIgnoreCase("}")){
+                    add_space--;
+                }
+                for (int j = add_space; j > 0; j--) {
+                    responseText += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                }
             }
             if (t.getText().equalsIgnoreCase("\\n"))
-                responseText+="<br/>";
-            else if (t.getText().equalsIgnoreCase("bpm"))
-                responseText+="<span style=\"color:#F00\">BPM </span>";
-            else if (t.getText().equalsIgnoreCase("rhy"))
-                responseText+="<span style=\"color:#F00\">RHY </span>";
-            else if (t.getText().equalsIgnoreCase("while"))
-                responseText+="<span style=\"color:#F00\">WHILE </span>";
+                responseText += "<br/>";
+            else if (t.getText().equalsIgnoreCase("bpm")) {
+                if (first_bpm){
+                    first_bpm=false;
+                    responseText +=" <button class=\"bpm_btn bpm_btn-tooltip btn-sequencer\" id=\"sequencer-visible-btn\" aria-label=\"BPM\"><i class=\"fa fa-th\"></i></button>&nbsp;";
+                }
+                responseText += "<span class=\"span_KeyofBPM span_hover\">BPM&nbsp;</span>";
+            }
+            else if (t.getText().equalsIgnoreCase("rhy")) {
+                responseText += "<span class=\"span_KeyofRHY span_hover\">RHY&nbsp;</span>";
+                toEnterLine=false;//后括号不需要空格
+            } else if (t.getText().equalsIgnoreCase("while"))
+                responseText += "<span class=\"span_KeyofWhile span_hover\">WHILE&nbsp;</span>";
             else if (t.getText().equalsIgnoreCase("times"))
-                responseText+="<span style=\"color:#F00\">TIMES </span>";
-            else if(t.getText().equalsIgnoreCase("{"))
-                responseText+="<span style=\"color:#F00\">{</span>";
-            else if (t.getText().equalsIgnoreCase("}"))
-                responseText+="<br><span style=\"color:#F00\">}</span>";
-            else if(t.getText().equalsIgnoreCase("if"))
-                responseText+="<span style=\"color:#F00\">IF </span>";
+                responseText += "<span class=\"span_KeyofTimes span_hover\">TIMES&nbsp;</span>";
+            else if (t.getText().equalsIgnoreCase("{")) {
+                responseText += "<span class=\"span_KeyofSymbol\">{&nbsp;</span>";
+                if (toEnterLine)
+                    add_space++;
+            } else if (t.getText().equalsIgnoreCase("}")) {
+                if (!toEnterLine) {
+                    toEnterLine = true;
+                    responseText+="&nbsp;";
+                }
+                responseText += "<span class=\"span_KeyofSymbol\">}</span>";
+            } else if (t.getText().equalsIgnoreCase("if"))
+                responseText += "<span class=\"span_KeyofIFELSE span_hover\">IF&nbsp;</span>";
             else if (t.getText().equalsIgnoreCase("else"))
-                responseText+="<span style=\"color:#F00\">ELSE </span>";
+                responseText += "<span class=\"span_KeyofIFELSE span_hover\">ELSE&nbsp;</span>";
+            else if (instruments.contains(t.getText().toLowerCase().trim())) {
+                responseText +=judgeInstrument(t.getText());
+            }
             else {
-                responseText=responseText+t.getText()+judgeInstrument(t.getText());
+                responseText+=t.getText();
             }
            }
-
-        responseText+="<span id='1s' style=\"color:#F00\">ELSE </span>";
         return  responseText;
     }
 
@@ -49,19 +76,19 @@ public class AnalyserServiceImpl implements AnalyserService {
         //"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"
         switch (s){
             case "cr":
-                return ":Crash-Cymbol";
+                return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/crash.png\" onclick=\"img_crash();\">";/*<span class="span_KeyofIntrument">&nbsp;&nbsp;Crash-Cymbol</span>*/
             case "hi":
-                return ":Hi-Hat";
+                return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/hi_hat.png\" onclick=\"img_hihat();\">";/*<span class="span_KeyofIntrument">&nbsp;&nbsp;Hi-Hat</span>*/
             case "ki":
-                return ":Kick-Drum";
+                return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/kick.png\" onclick=\"img_kick();\">";/*<span class="span_KeyofIntrument">&nbsp;&nbsp;Kick-Drum</span>*/
             case "fl":
-                return ":Floor-Tom";
+                return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/floor_tom.png\" onclick=\"img_floorTom();\">";/*<span class="span_KeyofIntrument">&nbsp;&nbsp;Floor-Tom</span>*/
             case "sn":
-                return ":Snare-Drum";
+                return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/snare.png\" onclick=\"img_snare();\">";/*<span class="span_KeyofIntrument">&nbsp;&nbsp;Snare-Drum</span>*/
             case"sm":
-                return ":Small-Rack";
+                return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/right_tom.png\" onclick=\"img_rightTom();\">";/*<span class="span_KeyofIntrument">&nbsp;&nbsp;Small-Rack</span>*/
             case "bi":
-                return ":Big-Rack";
+                return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/left_tom.png\" onclick=\"img_leftTom();\">";/*<span class="span_KeyofIntrument">&nbsp;&nbsp;Big-Rack</span>*/
             default:
                 return "";
         }

@@ -23,9 +23,6 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="../../assets/js/myjs/dont_move.js"></script>
-
-    <script src="../../assets/js/proscript/protextarea.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- all css here -->
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
@@ -38,97 +35,23 @@
     <link rel="stylesheet" href="../../assets/css/default-css.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="../../assets/css/responsive.css">
-    <!-- modernizr css -->
-    <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!--行号-->
+    <script src="../../assets/js/proscript/protextarea.js"></script>
     <!--不可滚动-->
     <script src="../../assets/js/myjs/dont_move.js"></script>
-    <!--取消text右边的滑动条-->
-    <link rel="stylesheet" href="../../assets/css/procss/proCss.css">
-    <%--<script src="../../assets/js/myjs/show_get_text.js"></script>--%>
+    <!--text相关Js-->
+    <script src="../../assets/js/myjs/show_get_text.js"></script>
     <!--alt表示tab键来-->
     <script src="../../assets/js/myjs/tap.js"></script>
     <!--左侧跳到指定位置-->
     <script src="../../assets/js/myjs/my_scrollbar.js"></script>
-    <script>
-//    ajax传数据
-    function getAndShow(code) {
-        $.ajax({
-            type: "POST",
-            url: "/textarea",
-            data: {str:code},
-            dataType: "json",
-            success: function(data){
-                document.getElementById("scrollOne").innerHTML=data.code;
-            },
-            error:function(data){
-               //donothing
-            }
-        });
-    }
 
-    var oMyBar1;
-    window.onload = function () {
-        oMyBar1 = new MyScrollBar({
-            selId: 'wrapper1',
-            bgColor: 'rgba(50, 50, 50, 0.2)',
-            barColor: '#2E8EEA',
-            enterColor: '#056FD8',
-            enterShow: false,
-            borderRadius: 2
-        });
-        var t = document.getElementById('codeTextarea');
-        t.onclick = function () {
-            oMyBar1.setSize();
-            var v = t.value;
-            // 开始到光标位置的内容
-            var cv = '';
-            if ('selectionStart' in t) {
-                cv = v.substr(0, t.selectionStart);
-            } else {
-                var oSel = document.selection.createRange();
-                oSel.moveStart('character', -t.value.length);
-                cv = oSel.text;
-            }
-            // 获取当前是几行
-            var cl = cv.split('\n').length-4;
-            if(cl<0)
-                cl=1;
-            var s={
-                id:cl,
-                time: 400
-            };
-            oMyBar1.jump(s);
-        }
-    }
-    function barOnKeyUp() {
-        oMyBar1.setSize();
-//        alert("barOnKeyUp")
-        var t = document.getElementById('codeTextarea');
-        var v = t.value;
-        // 开始到光标位置的内容
-        var cv = '';
-        if ('selectionStart' in t) {
-            cv = v.substr(0, t.selectionStart);
-        } else {
-            var oSel = document.selection.createRange();
-            oSel.moveStart('character', -t.value.length);
-            cv = oSel.text;
-        }
-        // 获取当前是几行
-        var cl = cv.split('\n').length-4;
-        if(cl<0)
-            cl=1;
-//        alert(cl);
-        var s={
-            id:cl,
-            time: 400
-        };
-        oMyBar1.jump(s);
-    }
-    </script>
+    <link rel="stylesheet" href="../../assets/css/procss/proCss.css">
     <style type="text/css">
+        /*text*/
         .box {
-            width: 600px; height: 300px; border: 1px solid #444; margin: 10px auto; padding: 0; overflow: hidden;
+            width: 600px; height: 375px; border:3px solid #453cad; margin: 10px auto; padding: 0; overflow: hidden;
         }
         .box1 {
             padding: 20px;
@@ -137,7 +60,9 @@
         .textbox{
             border:3px solid #453cad;
             background-color:transparent;
-            color: honeydew;
+            color: #ffcb2a;
+            padding-left: 10px;
+            /*margin-left: 10px;*/
             height: auto;
             resize:none;
             overflow-y: scroll;
@@ -147,9 +72,7 @@
         .textbox::-webkit-scrollbar {
             width: 5px;
             height: 10px;
-
             background-color: #b5b1b1;
-
         }
         .textbox::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -157,18 +80,63 @@
             background-color: black;
 
         }
-
-
-
-
         .textbox::-webkit-scrollbar-thumb {
             border-radius: 10px;
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
             background-color: #b5b1b1;
         }
 
+        .span_lineNo{
+            font-size: 14px;
+            letter-spacing: 0.09em;
+            color: #ffcb2a;
+        }
+        .span_hover:hover{
+            text-shadow:-1px 0 #fff938,
+            0 1px #fff938,
+            1px 0 #fff938,
+            0 -1px #fff938;
+        }
+        .span_KeyofWhile{
+        }
+        .span_KeyofRHY{
+        }
+        .span_KeyofBPM{
+        }
+        .span_KeyofTimes{
+        }
+        .span_KeyofSymbol{
+        }
+        .span_KeyofIFELSE{
 
+        }
+        .span_all{
+            color: #ffcb2a;
+        }
 
+        .bpm_btn {
+            font-size: 1.65em;
+            font-weight: bold;
+            line-height: 1;
+            width: auto;
+            padding: 0.5rem;
+            vertical-align: middle;
+            text-decoration: none;
+            color: #89939B;
+            border: 0;
+            border-radius: 2px;
+            background: #ffcb2a;
+        }
+
+        .bpm_btn:hover {
+            color: #2d2e36;
+            border-color: #2d2e36;
+            outline: none;
+        }
+
+        .bpm_btn .fa {
+            vertical-align: middle;
+        }
     </style>
 </head>
 
@@ -240,7 +208,14 @@
         <div class="row">
             <div class="col-md-7">
                 <div class='box box1' id='wrapper1'>
-                    <div class="scroll" id="scrollOne">
+                    <div class="scroll textHint span_all" id="scrollOne">
+                        <%--<div class="row textHint" id="textHint">--%>
+                            <span class=\"span_lineNo\" id=“1">1&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <button class="bpm_btn bpm_btn-tooltip btn-sequencer" id="sequencer-visible-btn" aria-label="BPM"><i class="fa fa-th"></i></button>
+                            <span class="span_KeyofBPM">BPM&nbsp;</span>
+                            <br/>
+                            <span class=\"span_lineNo\" id=“1">1&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="span_KeyofBPM">BPM&nbsp;</span>
                         <span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE 20</span><br id="p20"><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE2 </span><br><span id="1" style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br>
                     </div>
                 </div>
@@ -248,7 +223,7 @@
             <div class="col-md-4">
                 <form>
                     <textarea
-                            id="codeTextarea" rows="12" cols="45" spellcheck="false"
+                            id="codeTextarea" rows="13" cols="46" spellcheck="false"
                             class="textbox"
                             onkeyup="getAndShow(this.value);tap();barOnKeyUp()"
                             <%--onclick=""--%>
