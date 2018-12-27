@@ -25,7 +25,7 @@ public class AnalyserServiceImpl implements AnalyserService {
             if (t.getLineNumber() > i) {
                 i = t.getLineNumber();
                 responseText += "<span class=\"span_lineNo\" id=\"" + i + "\">" + i + "&nbsp;&nbsp;&nbsp;&nbsp;</span>";
-                if (toEnterLine&&t.getText().equalsIgnoreCase("}")){
+                if (toEnterLine && t.getText().equalsIgnoreCase("}")) {
                     add_space--;
                 }
                 for (int j = add_space; j > 0; j--) {
@@ -35,15 +35,14 @@ public class AnalyserServiceImpl implements AnalyserService {
             if (t.getText().equalsIgnoreCase("\\n"))
                 responseText += "<br/>";
             else if (t.getText().equalsIgnoreCase("bpm")) {
-                if (first_bpm){
-                    first_bpm=false;
-                    responseText +=" <button class=\"bpm_btn bpm_btn-tooltip btn-sequencer\" id=\"sequencer-visible-btn\" aria-label=\"BPM\"><i class=\"fa fa-th\"></i></button>&nbsp;";
+                if (first_bpm) {
+                    first_bpm = false;
+                    responseText += " <button class=\"bpm_btn bpm_btn-tooltip btn-sequencer\" id=\"sequencer-visible-btn\" aria-label=\"BPM\"><i class=\"fa fa-th\"></i></button>&nbsp;";
                 }
                 responseText += "<span class=\"span_KeyofBPM span_hover\">BPM&nbsp;</span>";
-            }
-            else if (t.getText().equalsIgnoreCase("rhy")) {
+            } else if (t.getText().equalsIgnoreCase("rhy")) {
                 responseText += "<span class=\"span_KeyofRHY span_hover\">RHY&nbsp;</span>";
-                toEnterLine=false;//后括号不需要空格
+                toEnterLine = false;//后括号不需要空格
             } else if (t.getText().equalsIgnoreCase("while"))
                 responseText += "<span class=\"span_KeyofWhile span_hover\">WHILE&nbsp;</span>";
             else if (t.getText().equalsIgnoreCase("times"))
@@ -55,7 +54,7 @@ public class AnalyserServiceImpl implements AnalyserService {
             } else if (t.getText().equalsIgnoreCase("}")) {
                 if (!toEnterLine) {
                     toEnterLine = true;
-                    responseText+="&nbsp;";
+                    responseText += "&nbsp;";
                 }
                 responseText += "<span class=\"span_KeyofSymbol\">}</span>";
             } else if (t.getText().equalsIgnoreCase("if"))
@@ -63,12 +62,11 @@ public class AnalyserServiceImpl implements AnalyserService {
             else if (t.getText().equalsIgnoreCase("else"))
                 responseText += "<span class=\"span_KeyofIFELSE span_hover\">ELSE&nbsp;</span>";
             else if (instruments.contains(t.getText().toLowerCase().trim())) {
-                responseText +=judgeInstrument(t.getText());
+                responseText += judgeInstrument(t.getText());
+            } else {
+                responseText += t.getText();
             }
-            else {
-                responseText+=t.getText();
-            }
-           }
+        }
         return  responseText;
     }
 

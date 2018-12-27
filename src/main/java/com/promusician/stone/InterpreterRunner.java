@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class InterpreterRunner {
-    private static String file = "data/lex.stone";
+    private static String file = "E:\\BounjourMonde\\SpringMVC\\ProMusician\\src\\main\\resources\\data\\lex.stone";
 
     public static void main(String[] args) {
         run(new BasicParser(), new BasicEnv(), file);

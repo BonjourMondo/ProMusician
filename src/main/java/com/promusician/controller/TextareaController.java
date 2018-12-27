@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletResponse;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,8 +39,12 @@ public class TextareaController {
     public void getText(HttpServletResponse response,
                         @RequestParam(value = "str") String code) throws IOException {
         //request
-//        logger.debug(code);
-        String analyseCode = analyserService.analyseInputText(code);
+        String[] strings=code.split("\n");
+        String analyse_text="";//为了处理空格，否则会报错
+        for (String s:strings) {
+           analyse_text=analyse_text+s.trim()+"\n";
+        }
+        String analyseCode = analyserService.analyseInputText(analyse_text);
         logger.debug("处理结果为：{}", analyseCode);
         //传值为json
         Map<String,String> map=new HashMap<>();

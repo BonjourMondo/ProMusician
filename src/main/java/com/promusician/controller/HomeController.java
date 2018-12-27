@@ -27,7 +27,7 @@ public class HomeController {
         String pathname = "data/lex.stone";
         InputStream in = HomeController.class.getClassLoader().getResourceAsStream(pathname);
         String text= Util.inputStreamToString(in);
-        model.addAttribute("template_promusician",text);
+        model.addAttribute("template_promusician",text.trim());
         logger.debug("成功载入lex.stone");
         return "pro_musician";
     }
