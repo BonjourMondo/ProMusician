@@ -3,6 +3,7 @@ package com.promusician.stone.ast;
 import com.promusician.stone.Exception.StoneExcetion;
 import com.promusician.stone.env.Environment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class WhileStmnt extends ASTList {
@@ -24,16 +25,24 @@ public class WhileStmnt extends ASTList {
     }
 
     @Override
-    public Object eval(Environment env) {
+    public Object eval(Environment env, ArrayList arrayList) {
+//        arrayList.add("while");
         Object result = 0;
-        while (checkCondition(env)) {
-            result = body().eval(env);
+//        int times=0;
+        while (checkCondition(env,arrayList)) {
+//            times++;
+//            System.out.println(body().toString());
+            result = body().eval(env,arrayList);
         }
+        //后期需要修改循环次数
+//        if (times>RhyStmnt.MAX_LOOP)
+//            arrayList.add("loops "+RhyStmnt.MAX_LOOP);
+//        else arrayList.add("loops "+times);
         return result;
     }
 
-    private boolean checkCondition(Environment env) {
-        Object conditon=condition().eval(env);
+    private boolean checkCondition(Environment env,ArrayList arrayList) {
+        Object conditon=condition().eval(env,arrayList);
         boolean con;
         if (conditon instanceof Boolean) {
             con = ((Boolean) conditon).booleanValue();

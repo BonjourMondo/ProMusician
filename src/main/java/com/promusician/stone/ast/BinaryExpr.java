@@ -3,6 +3,7 @@ package com.promusician.stone.ast;
 import com.promusician.stone.Exception.StoneExcetion;
 import com.promusician.stone.env.Environment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryExpr extends ASTList {
@@ -25,16 +26,16 @@ public class BinaryExpr extends ASTList {
 
     //有两个操作数的表达式
     @Override
-    public Object eval(Environment env) {
+    public Object eval(Environment env,ArrayList arrayList) {
         String op = operator();
         if ("=".equals(op)) {
             //=
-            Object right = right().eval(env);
+            Object right = right().eval(env,arrayList);
 
             return computeAssign(env, right);
         } else {
-            Object left = left().eval(env);
-            Object right = right().eval(env);
+            Object left = left().eval(env,arrayList);
+            Object right = right().eval(env,arrayList);
             return computeOP(left, right, op);
 
         }

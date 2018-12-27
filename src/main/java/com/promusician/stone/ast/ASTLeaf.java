@@ -7,6 +7,9 @@ import com.promusician.stone.token.Token;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * astleaf是叶节点的类
+ */
 public class ASTLeaf extends ASTree {
     private static ArrayList<ASTree> empty=new ArrayList<>();
     private Token token;
@@ -38,12 +41,15 @@ public class ASTLeaf extends ASTree {
     public Token token(){return token;}
 
     @Override
+    public String toString(ArrayList<String> strings) {
+        return token.getText();
+    }
+    @Override
     public String toString() {
         return token.getText();
     }
-
     @Override
-    public Object eval(Environment env) {
+    public Object eval(Environment env,ArrayList arrayList) {
         throw  new StoneExcetion("无法执行 eval "+toString(),this);
     }
 }

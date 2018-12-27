@@ -3,6 +3,7 @@ package com.promusician.stone.ast;
 import com.promusician.stone.Exception.StoneExcetion;
 import com.promusician.stone.env.Environment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class NegativeExpr extends ASTList {
@@ -21,8 +22,8 @@ public class NegativeExpr extends ASTList {
     }
 
     @Override
-    public Object eval(Environment env) {
-        Object v=operand().eval(env);
+    public Object eval(Environment env,ArrayList arrayList) {
+        Object v=operand().eval(env,arrayList);
         if (v instanceof Integer){
             return new Integer(-((Integer) v).intValue());
         }

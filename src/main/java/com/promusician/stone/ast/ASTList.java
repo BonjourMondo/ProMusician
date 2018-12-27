@@ -3,9 +3,13 @@ package com.promusician.stone.ast;
 import com.promusician.stone.Exception.StoneExcetion;
 import com.promusician.stone.env.Environment;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * astlist是含有子节点的类
+ */
 public class ASTList extends ASTree {
     protected List<ASTree> children;
 
@@ -27,6 +31,18 @@ public class ASTList extends ASTree {
         return children.iterator();
     }
 
+    @Override
+    public String toString(ArrayList<String> strings) {
+        StringBuilder sb=new StringBuilder();
+        sb.append('(');
+        String seq="";
+        for (ASTree t:children){
+            sb.append(seq);
+            seq=" ";
+            sb.append(t.toString(strings));
+        }
+        return sb.append(')').toString();
+    }
     @Override
     public String toString() {
         StringBuilder sb=new StringBuilder();
@@ -52,7 +68,7 @@ public class ASTList extends ASTree {
     }
 
     @Override
-    public Object eval(Environment env) {
+    public Object eval(Environment env,ArrayList arrayList) {
         throw  new StoneExcetion("无法执行 eval "+toString(),this);
     }
 }

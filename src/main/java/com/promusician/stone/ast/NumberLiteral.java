@@ -4,6 +4,8 @@ import com.promusician.stone.env.Environment;
 import com.promusician.stone.token.NumToken;
 import com.promusician.stone.token.Token;
 
+import java.util.ArrayList;
+
 public class NumberLiteral extends ASTLeaf {
     public NumberLiteral(Token t) {
         super(t);
@@ -14,7 +16,7 @@ public class NumberLiteral extends ASTLeaf {
     }
 
     @Override
-    public Object eval(Environment env) {
+    public Object eval(Environment env,ArrayList arrayList) {
         return value();
     }
 }

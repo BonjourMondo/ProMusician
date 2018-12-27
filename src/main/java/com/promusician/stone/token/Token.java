@@ -3,7 +3,7 @@ package com.promusician.stone.token;
 public abstract class Token {
     public static final Token EOF=new Token(-1){};//EOF 表示文件终结
     public static final String EOL="\\n";//EOL 标识一行终结
-    private int lineNumber;
+    private int lineNumber;//行号
 
     protected Token(int line){
         this.lineNumber=line;

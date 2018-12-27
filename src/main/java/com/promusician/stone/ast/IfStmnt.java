@@ -3,6 +3,7 @@ package com.promusician.stone.ast;
 import com.promusician.stone.Exception.StoneExcetion;
 import com.promusician.stone.env.Environment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class IfStmnt extends ASTList {
@@ -29,13 +30,13 @@ public class IfStmnt extends ASTList {
     }
 
     @Override
-    public Object eval(Environment env) {
-        if (checkCondition(env)) {
-            return thenBlock().eval(env);
+    public Object eval(Environment env,ArrayList arrayList) {
+        if (checkCondition(env,arrayList)) {
+            return thenBlock().eval(env,arrayList);
         } else {
             ASTree els = elseBlock();
             if (els != null) {
-                return els.eval(env);
+                return els.eval(env,arrayList);
             }
             //没有else 语句 条件为 false
             //return null;
@@ -43,8 +44,8 @@ public class IfStmnt extends ASTList {
         }
     }
 
-    private boolean checkCondition(Environment env) {
-        Object conditon = condition().eval(env);
+    private boolean checkCondition(Environment env,ArrayList arrayList) {
+        Object conditon = condition().eval(env,arrayList);
         boolean con;
         if (conditon instanceof Boolean) {
             con = ((Boolean) conditon).booleanValue();
