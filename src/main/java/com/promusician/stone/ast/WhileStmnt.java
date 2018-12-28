@@ -28,16 +28,15 @@ public class WhileStmnt extends ASTList {
     public Object eval(Environment env, ArrayList arrayList) {
 //        arrayList.add("while");
         Object result = 0;
-//        int times=0;
+        int times=1;
         while (checkCondition(env,arrayList)) {
-//            times++;
+            times++;
+            if (times>=RhyStmnt.MAX_LOOP)
+                arrayList.add("loops");
 //            System.out.println(body().toString());
             result = body().eval(env,arrayList);
         }
         //后期需要修改循环次数
-//        if (times>RhyStmnt.MAX_LOOP)
-//            arrayList.add("loops "+RhyStmnt.MAX_LOOP);
-//        else arrayList.add("loops "+times);
         return result;
     }
 

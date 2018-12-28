@@ -1,5 +1,8 @@
 package com.promusician.stone;
 
+import com.promusician.stone.Exception.DeadLoopException;
+import com.promusician.stone.Exception.ParseException;
+import com.promusician.stone.Exception.StoneExcetion;
 import com.promusician.stone.ast.ASTree;
 import com.promusician.stone.ast.NULLStmnt;
 import com.promusician.stone.ast.RhyStmnt;
@@ -13,7 +16,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class InterpreterRunner {
     private static String file = "E:\\BounjourMonde\\SpringMVC\\ProMusician\\src\\main\\resources\\data\\lex.stone";
@@ -31,11 +33,33 @@ public class InterpreterRunner {
                 ASTree ast = basicParser.parse(lex);
                // System.out.println(ast.toString(strings));
                 if (!(ast instanceof NULLStmnt)) {
-                    Object o = ast.eval(basicEnv,strings);
-                    System.out.println("=> "+o);
+                    try {
+                        Object o = ast.eval(basicEnv,strings);
+                    }catch (DeadLoopException e){
+                        logger.debug(e.getMessage());
+                        //出现死循环错误
+                        //后期应当报到前端提醒？
+                        break;
+                    }catch (StoneExcetion e){
+                        logger.debug(e.getMessage());
+                        //出现语法错误
+                        break;
+                    }catch (ParseException e){
+                        logger.debug(e.getMessage());
+                        //出现词法错误
+                        break;
+                    }catch (Exception e){
+                        logger.debug(e.getMessage());
+                        //????
+                        break;
+                    }
+//                    System.out.println("=> "+o);
                 }
             }
             System.out.println(strings);
+//            System.out.println(strings.size());
+//            System.out.println(strings.contains("loops"));
+//            System.out.println(strings.get(strings.size()-1));
             return strings;
         } catch (FileNotFoundException e) {
             e.printStackTrace();

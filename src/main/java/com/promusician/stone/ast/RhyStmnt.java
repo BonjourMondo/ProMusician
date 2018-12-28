@@ -13,7 +13,7 @@ public class RhyStmnt extends ASTList {
     public static Logger logger= LoggerFactory.getLogger(RhyStmnt.class);
     ArrayList<String> arrayList=new ArrayList<>(Arrays.asList("cr","sn","fl","hi","bi","sm", "ki"));
     public static int loop_time=0;
-    public static final int MAX_LOOP=10000;
+    public static final int MAX_LOOP=1000;
 
     public RhyStmnt(List<ASTree> lis) {
         super(lis);
@@ -67,10 +67,8 @@ public class RhyStmnt extends ASTList {
 //        System.out.println("");
         //所有可能的乐器组合
 //       譬如[cr|hi|ki|, sn|sm|fl|bi|]
-        if (!strings.contains(s)){
-            strings.add(s);
-        }
-        logger.debug(s);
+        strings.add(s);
+//        logger.debug(s);
     }
 
     public String toString(ArrayList<String> strings) {
@@ -86,8 +84,7 @@ public class RhyStmnt extends ASTList {
     public Object eval(Environment env,ArrayList arrayList) {
         getIntrument(arrayList);
         loop_time++;
-        if (loop_time>this.MAX_LOOP) {
-            logger.debug("出现死循环错误");
+        if (loop_time>=this.MAX_LOOP) {
             throw new DeadLoopException();
         }
         return 0;

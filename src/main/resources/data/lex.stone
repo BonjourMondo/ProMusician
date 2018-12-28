@@ -12,9 +12,6 @@ while times>0{
      rhy{cr;}
      }
      	 i=i+1
-     	 times=times-1
+     	 times=times-1;
      	 bpm=bpm+10
 }
-bpm
-i
-times
