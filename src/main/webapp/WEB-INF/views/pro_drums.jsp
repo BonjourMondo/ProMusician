@@ -13,9 +13,9 @@
     <!--[if IE]>
     <script src="http://www.jq22.com/jquery/html5.min.js"></script>
     <![endif]-->
-    <script src="assets/js/myjs/drumbeat.js"></script>
+    <script src="../../assets/js/myjs/drumbeat.js"></script>
 </head>
-<%--<button onclick="pro_close()" >tap!</button>--%>
+<%--<button onclick="pro_close()">tap!</button>--%>
 <body>
 <div class="content">
     <div class="container-drums">

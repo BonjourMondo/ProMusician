@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css">
 
     <!--行号-->
-    <script src="../../assets/js/proscript/protextarea.js"></script>
+    <script src="../../assets/js/myjs/protextarea.js"></script>
     <!--不可滚动-->
     <script src="../../assets/js/myjs/dont_move.js"></script>
     <!--text相关Js-->
@@ -152,7 +152,48 @@
                 dataType: "json",
                 success: function(data){
                     //调用乐器打击代码
-                    alert("s");
+//                    alert("s");
+                    if(data.error_code=="success"){
+                        //成功场景
+                        //处理字符串，并映射为Instrument
+                        var instruments=data.code.split(",");
+                        for(var i=0;i<instruments.length;i++){
+//                            alert(instruments[i]);
+
+                            var beat_instruments=instruments[i].split("|");
+                            for(var j=0;j<beat_instruments.length;j++){
+                                //  music:"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"
+//                                alert(beat_instruments[j]+"");
+                                if(beat_instruments[j].indexOf("cr")!=-1){
+                                    alert("cr");
+                                }else if(beat_instruments[j].indexOf("ki")!=-1){
+
+                                }else if(beat_instruments[j].indexOf("sm")!=-1){
+
+                                }else if(beat_instruments[j].indexOf("bi")!=-1){
+
+                                }else if(beat_instruments[j].indexOf("hi")!=-1){
+
+                                }else if(beat_instruments[j].indexOf("fl")!=-1){
+
+                                }else if(beat_instruments[j].indexOf("sn")!=-1){
+
+                                }
+                            }
+                        }
+
+                        //调用子页面的function
+//                        document.getElementById("drums_page").contentWindow.pro_close();
+                    }else if (data.error_code=="loops"){
+                        //循环场景
+//                        setTempo();
+                    }else if(data.error_code=="parser_error"){
+                      alert(data.error_msg);
+                    }else if(data.error_code=="stone_error"){
+                        alert(data.error_msg);
+                    }else{
+                        alert(data.error_msg);
+                    }
                 },
                 error:function(data){
                     //donothing
@@ -161,6 +202,26 @@
             });
             return false;
         }
+
+
+
+// Tempo varibles
+var bpm = 150;
+var interval = 60000 / bpm;
+var intervalId;
+// Set tempo
+function setTempo() {
+    window.clearInterval(intervalId);
+//    alert("ss2s");
+    intervalId = window.setInterval(sequencer, interval);
+}
+
+function sequencer () {
+//    alert("sss");
+    hiHat();
+}
+
+
     </script>
 </head>
 
@@ -238,6 +299,7 @@
                             <button class="bpm_btn bpm_btn-tooltip btn-sequencer" id="sequencer-visible-btn" aria-label="BPM"><i class="fa fa-th"></i></button>
                             <span class="span_KeyofBPM">BPM&nbsp;</span>
                             <br/>
+                            <button onclick="pro_close();">ssss</button>
                             <span class=\"span_lineNo\" id=“1">1&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             <span class="span_KeyofBPM">BPM&nbsp;</span>
                         <span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE 20</span><br id="p20"><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE2 </span><br><span id="1" style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br>
@@ -279,7 +341,7 @@
                     </div>
                     <div class="col-md-12">
                         <%--pro_close();CheckAndRun()--%>
-                        <a href="javascript:void(0)" style="background: #fe942f;" onclick="CheckAndRun()">
+                        <a href="javascript:void(0)" style="background: #fe942f;" onclick="CheckAndRun();">
 
                             Start
                         </a>

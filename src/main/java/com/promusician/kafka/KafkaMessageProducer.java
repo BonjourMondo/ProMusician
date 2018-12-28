@@ -4,14 +4,16 @@ import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.util.Properties;
 
 @Component
 public class KafkaMessageProducer {
-    private Logger logger= Logger.getLogger(KafkaMessageProducer.class.getName());
+//    private Logger logger= Logger.getLogger(KafkaMessageProducer.class.getName());
+public static Logger logger = LoggerFactory.getLogger(KafkaMessageProducer.class);
     private final KafkaProducer<String,String> producer;
     private Properties producerProp;
 
@@ -21,6 +23,7 @@ public class KafkaMessageProducer {
     }
 
     public void send()throws Exception{
+        logger.debug("发送Kafka消息中...");
         //file_path格式为 name-title:date  用于以后的识别
         ProducerRecord<String,String> record= new ProducerRecord<String, String>
                 ("Music",

@@ -229,6 +229,7 @@ $(function() {
 
 	// Hi-hat play
 	window.hiHat = function() {
+		// alert("sss");
 		hiHattl.restart();
 		hiHattl.play();
 		var hiHatClosedAudioEl = hiHatClosedAudio.get(0);

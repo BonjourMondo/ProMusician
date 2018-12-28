@@ -1,5 +1,6 @@
 package com.promusician.stone;
 
+import com.promusician.model.Code;
 import com.promusician.stone.Exception.DeadLoopException;
 import com.promusician.stone.Exception.ParseException;
 import com.promusician.stone.Exception.StoneExcetion;
@@ -20,6 +21,11 @@ import java.util.ArrayList;
 public class InterpreterRunner {
     private static String file = "E:\\BounjourMonde\\SpringMVC\\ProMusician\\src\\main\\resources\\data\\lex.stone";
     public static Logger logger= LoggerFactory.getLogger(InterpreterRunner.class);
+    public static final String LOOPS="loops";
+    public static final String PARSER_ERROR="parser_error";
+    public static final String STONE_ERROR="stone_error";
+    public static final String ERROR="exception_error";
+    public static final String SUCCESS="success";
 
     public static void main(String[] args) {
         runFile(new BasicParser(), new BasicEnv(), file);
@@ -41,44 +47,56 @@ public class InterpreterRunner {
         }
     }
 
-    public static ArrayList<String> runCode(BasicParser basicParser, Environment basicEnv, String code) {
+    public static Code runCode(BasicParser basicParser, Environment basicEnv, String code) {
         ArrayList<String> strings = new ArrayList<>();
         Lexer lex = new Lexer(code);
-        run(basicParser,basicEnv,lex,strings);
-        System.out.println(strings);
-//            System.out.println(strings.size());
-//            System.out.println(strings.contains("loops"));
-//            System.out.println(strings.get(strings.size()-1));
-        return strings;
+        Code c=run(basicParser,basicEnv,lex,strings);
+        return c;
     }
 
-    public static void run(BasicParser basicParser, Environment basicEnv,Lexer lex,ArrayList arrayList){
+    public static Code run(BasicParser basicParser, Environment basicEnv,Lexer lex,ArrayList arrayList){
+        Code code=new Code();
         while (lex.peek(0) != Token.EOF) {
             ASTree ast = basicParser.parse(lex);
-            // System.out.println(ast.toString(strings));
             if (!(ast instanceof NULLStmnt)) {
                 try {
                     Object o = ast.eval(basicEnv, arrayList);
+                    if (null!=ast.child(0)) {
+                        if ("bpm".equalsIgnoreCase(ast.child(0).toString())){
+                            code.setBpm(o.toString());//设置BPM
+//                            System.out.println(o.toString());
+                        }
+                    }
+
                 } catch (DeadLoopException e) {
                     logger.debug(e.getMessage());
+                    code.setError_msg("死循环");
+                    code.setError_code(LOOPS);
                     //出现死循环错误
                     //后期应当报到前端提醒？
                     break;
                 } catch (StoneExcetion e) {
                     logger.debug(e.getMessage());
+                    code.setError_msg(e.getMessage());
+                    code.setError_code(STONE_ERROR);
                     //出现语法错误
                     break;
                 } catch (ParseException e) {
                     logger.debug(e.getMessage());
+                    code.setError_msg(e.getMessage());
+                    code.setError_code(PARSER_ERROR);
                     //出现词法错误
                     break;
                 } catch (Exception e) {
                     logger.debug(e.getMessage());
+                    code.setError_msg(e.getMessage());
+                    code.setError_code(ERROR);
                     //????
                     break;
                 }
-//                    System.out.println("=> "+o);
             }
         }
+        code.setStrings(arrayList);
+        return code;
     }
 }

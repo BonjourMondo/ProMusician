@@ -13,5 +13,4 @@ while times>0{
      }
      	 i=i+1
      	 times=times-1;
-     	 bpm=bpm+10
 }

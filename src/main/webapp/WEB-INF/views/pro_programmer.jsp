@@ -21,7 +21,7 @@
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="../../assets/js/myjs/dont_move.js"></script>
 
-    <script src="../../assets/js/proscript/protextarea.js"></script>
+    <script src="../../assets/js/myjs/protextarea.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- all css here -->
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">

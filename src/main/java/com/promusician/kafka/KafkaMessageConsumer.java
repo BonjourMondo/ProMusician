@@ -4,7 +4,8 @@ import com.promusician.mapper.MusicMapper;
 import com.promusician.model.Music;
 import com.promusician.service.CommitDatebaseService;
 import org.apache.kafka.clients.consumer.*;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cache.annotation.Cacheable;
@@ -14,7 +15,7 @@ import java.util.Properties;
 
 @Component
 public class KafkaMessageConsumer extends Thread{
-    public static final Logger log= Logger.getLogger(KafkaMessageConsumer.class.getName());
+    public static Logger log = LoggerFactory.getLogger(KafkaMessageConsumer.class);
     private Properties prop;
     private final KafkaConsumer<String, String> consumer;
 

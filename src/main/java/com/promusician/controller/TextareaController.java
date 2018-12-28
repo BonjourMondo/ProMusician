@@ -1,7 +1,9 @@
 package com.promusician.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.promusician.model.Code;
 import com.promusician.service.*;
+import com.promusician.stone.InterpreterRunner;
 import com.promusician.util.Util;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -51,7 +53,7 @@ public class TextareaController {
            analyse_text=analyse_text+s.trim()+"\n";
         }
         String analyseCode = analyserService.analyseInputText(analyse_text);
-        logger.debug("处理结果为：{}", analyseCode);
+//        logger.debug("处理结果为：{}", analyseCode);
         //传值为json
         Map<String,String> map=new HashMap<>();
         map.put("code",analyseCode);
@@ -78,15 +80,24 @@ public class TextareaController {
     @RequestMapping(value = "/start",method = RequestMethod.POST)
     public void getRunnerText(HttpServletRequest request,HttpServletResponse response) throws Exception {
         String s=request.getParameter("str");
-        logger.debug("试运行代码中...{}",s);
+//        logger.debug("试运行代码中...{}",s);
         if (StringUtils.isEmpty(s)){
             throw new Exception("传值空异常");
         }
-        runnerService.CheckAndRun(s);
+        Code code=runnerService.CheckAndRun(s);
         //传值为json
         Map<String,String> map=new HashMap<>();
-        map.put("code",s);
+        map.put("code",code.getStrings().toString());
+        if (StringUtils.isEmpty(code.getError_code())){
+            map.put("error_code", InterpreterRunner.SUCCESS);
+//            map.put("error_mesg",code.getError_msg());
+        }else {
+            map.put("error_code", code.getError_code());
+            map.put("error_msg", code.getError_msg());
+        }
+        map.put("bpm",code.getBpm());
         String objJSON= JSON.toJSONString(map);
+        logger.debug(objJSON);
         Util.returnJson(response,objJSON);
     }
 

@@ -1,5 +1,7 @@
 package com.promusician.service;
 
+import com.promusician.model.Code;
+
 public interface RunnerService {
-    void CheckAndRun(String str);
+    Code CheckAndRun(String str);
 }
