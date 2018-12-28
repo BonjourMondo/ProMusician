@@ -1,5 +1,5 @@
 bpm=60
-times
+times=10
 i=10
 while times>0{
  	 if i%2==0{

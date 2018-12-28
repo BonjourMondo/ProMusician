@@ -1,9 +1,9 @@
 package com.promusician.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.promusician.service.AnalyserServiceImpl;
-import com.promusician.service.CommitServiceImpl;
+import com.promusician.service.*;
 import com.promusician.util.Util;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -28,11 +30,15 @@ public class TextareaController {
 
     @Autowired
     @Qualifier("analyserservice")
-    private AnalyserServiceImpl analyserService;
+    private AnalyserService analyserService;
 
     @Autowired
     @Qualifier("commitservice")
-    private CommitServiceImpl commitService;
+    private CommitService commitService;
+
+    @Autowired
+    @Qualifier("checkandrunservice")
+    private RunnerService runnerService;
 
 
     @RequestMapping(method = RequestMethod.POST,produces = "text/html;charset=UTF-8")
@@ -63,6 +69,25 @@ public class TextareaController {
     @RequestMapping(value = "/test")
     public String test(){
         return "success_commit";
+    }
+
+
+    /*
+    ajax传值
+     */
+    @RequestMapping(value = "/start",method = RequestMethod.POST)
+    public void getRunnerText(HttpServletRequest request,HttpServletResponse response) throws Exception {
+        String s=request.getParameter("str");
+        logger.debug("试运行代码中...{}",s);
+        if (StringUtils.isEmpty(s)){
+            throw new Exception("传值空异常");
+        }
+        runnerService.CheckAndRun(s);
+        //传值为json
+        Map<String,String> map=new HashMap<>();
+        map.put("code",s);
+        String objJSON= JSON.toJSONString(map);
+        Util.returnJson(response,objJSON);
     }
 
 }

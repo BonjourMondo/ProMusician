@@ -17,4 +17,5 @@ function pro_close(){//停止
         pro_init=setInterval("hiHat()",interval);
         stop=true;
     }
+    return false;
 }

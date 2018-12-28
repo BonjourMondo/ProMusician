@@ -138,6 +138,30 @@
             vertical-align: middle;
         }
     </style>
+
+    <script>
+//        /textarea/start"
+        function CheckAndRun(){
+//            alert("!!!");
+            var v=document.getElementById("codeTextarea");
+            var code=v.value;
+            $.ajax({
+                type: "POST",
+                url: "/textarea/start",
+                data: {str:code},
+                dataType: "json",
+                success: function(data){
+                    //调用乐器打击代码
+//                    alert("s");
+                },
+                error:function(data){
+                    //donothing
+//                    alert("f");
+                }
+            });
+            return false;
+        }
+    </script>
 </head>
 
 
@@ -254,7 +278,8 @@
                         </a>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" style="background: #fe942f;" onclick="pro_close()">
+                        <%--pro_close();CheckAndRun()--%>
+                        <a href="javascript:void(0)" style="background: #fe942f;" onclick="CheckAndRun()">
 
                             Start
                         </a>

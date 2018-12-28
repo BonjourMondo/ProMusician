@@ -22,40 +22,14 @@ public class InterpreterRunner {
     public static Logger logger= LoggerFactory.getLogger(InterpreterRunner.class);
 
     public static void main(String[] args) {
-        run(new BasicParser(), new BasicEnv(), file);
+        runFile(new BasicParser(), new BasicEnv(), file);
     }
 
-    public static ArrayList<String> run(BasicParser basicParser, Environment basicEnv, String path) {
+    public static ArrayList<String> runFile(BasicParser basicParser, Environment basicEnv, String path) {
         ArrayList<String> strings=new ArrayList<>();
         try {
             Lexer lex = new Lexer(new FileReader(new File(path)));
-            while (lex.peek(0) != Token.EOF) {
-                ASTree ast = basicParser.parse(lex);
-               // System.out.println(ast.toString(strings));
-                if (!(ast instanceof NULLStmnt)) {
-                    try {
-                        Object o = ast.eval(basicEnv,strings);
-                    }catch (DeadLoopException e){
-                        logger.debug(e.getMessage());
-                        //出现死循环错误
-                        //后期应当报到前端提醒？
-                        break;
-                    }catch (StoneExcetion e){
-                        logger.debug(e.getMessage());
-                        //出现语法错误
-                        break;
-                    }catch (ParseException e){
-                        logger.debug(e.getMessage());
-                        //出现词法错误
-                        break;
-                    }catch (Exception e){
-                        logger.debug(e.getMessage());
-                        //????
-                        break;
-                    }
-//                    System.out.println("=> "+o);
-                }
-            }
+            run(basicParser,basicEnv,lex,strings);
             System.out.println(strings);
 //            System.out.println(strings.size());
 //            System.out.println(strings.contains("loops"));
@@ -64,6 +38,47 @@ public class InterpreterRunner {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    public static ArrayList<String> runCode(BasicParser basicParser, Environment basicEnv, String code) {
+        ArrayList<String> strings = new ArrayList<>();
+        Lexer lex = new Lexer(code);
+        run(basicParser,basicEnv,lex,strings);
+        System.out.println(strings);
+//            System.out.println(strings.size());
+//            System.out.println(strings.contains("loops"));
+//            System.out.println(strings.get(strings.size()-1));
+        return strings;
+    }
+
+    public static void run(BasicParser basicParser, Environment basicEnv,Lexer lex,ArrayList arrayList){
+        while (lex.peek(0) != Token.EOF) {
+            ASTree ast = basicParser.parse(lex);
+            // System.out.println(ast.toString(strings));
+            if (!(ast instanceof NULLStmnt)) {
+                try {
+                    Object o = ast.eval(basicEnv, arrayList);
+                } catch (DeadLoopException e) {
+                    logger.debug(e.getMessage());
+                    //出现死循环错误
+                    //后期应当报到前端提醒？
+                    break;
+                } catch (StoneExcetion e) {
+                    logger.debug(e.getMessage());
+                    //出现语法错误
+                    break;
+                } catch (ParseException e) {
+                    logger.debug(e.getMessage());
+                    //出现词法错误
+                    break;
+                } catch (Exception e) {
+                    logger.debug(e.getMessage());
+                    //????
+                    break;
+                }
+//                    System.out.println("=> "+o);
+            }
         }
     }
 }
