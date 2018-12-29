@@ -13,7 +13,6 @@ public class ParseException extends RuntimeException {
     public ParseException(String msg, Token t){
         super("在 "+location(t)+" 有语法错误 "+msg);
         logger.debug("在 "+location(t)+" 有语法错误 "+msg);
-
     }
 
     private static String location(Token t) {

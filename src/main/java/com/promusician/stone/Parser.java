@@ -6,6 +6,8 @@ import com.promusician.stone.ast.ASTLeaf;
 import com.promusician.stone.ast.ASTList;
 import com.promusician.stone.ast.ASTree;
 import com.promusician.stone.token.Token;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -19,6 +21,7 @@ import java.util.List;
  * rule()方法是Parser类的一个static方法
  */
 public class Parser {
+    public static Logger logger = LoggerFactory.getLogger(Parser.class);
     protected static abstract class Element {
         protected abstract void parse(Lexer lexer, List<ASTree> res)
                 throws ParseException;
@@ -147,10 +150,14 @@ public class Parser {
                         return;
                     }
 
-            if (tokens.length > 0)
+            if (tokens.length > 0) {
+
                 throw new ParseException(tokens[0] + " expected.", t);
-            else
+
+            }
+            else {
                 throw new ParseException(t);
+            }
         }
         protected void find(List<ASTree> res, Token t) {
             res.add(new ASTLeaf(t));

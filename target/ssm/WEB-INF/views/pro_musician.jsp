@@ -140,7 +140,7 @@
     </style>
 
     <script>
-//        /textarea/start"
+//        /textarea/start
         function CheckAndRun(){
 //            alert("!!!");
             var v=document.getElementById("codeTextarea");
@@ -156,34 +156,9 @@
                     if(data.error_code=="success"){
                         //成功场景
                         //处理字符串，并映射为Instrument
+                        success_time=0;//每次调用必须归零
                         var instruments=data.code.split(",");
-                        for(var i=0;i<instruments.length;i++){
-//                            alert(instruments[i]);
-
-                            var beat_instruments=instruments[i].split("|");
-                            for(var j=0;j<beat_instruments.length;j++){
-                                //  music:"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"
-//                                alert(beat_instruments[j]+"");
-                                if(beat_instruments[j].indexOf("cr")!=-1){
-                                    alert("cr");
-                                }else if(beat_instruments[j].indexOf("ki")!=-1){
-
-                                }else if(beat_instruments[j].indexOf("sm")!=-1){
-
-                                }else if(beat_instruments[j].indexOf("bi")!=-1){
-
-                                }else if(beat_instruments[j].indexOf("hi")!=-1){
-
-                                }else if(beat_instruments[j].indexOf("fl")!=-1){
-
-                                }else if(beat_instruments[j].indexOf("sn")!=-1){
-
-                                }
-                            }
-                        }
-
-                        //调用子页面的function
-//                        document.getElementById("drums_page").contentWindow.pro_close();
+                        instru_success(instruments,1000);
                     }else if (data.error_code=="loops"){
                         //循环场景
 //                        setTempo();
@@ -203,24 +178,88 @@
             return false;
         }
 
+    var success_time=0;
+    var success_continue=true;
+    function instru_success(instruments,bpm) {
+        var beat_instruments = instruments[success_time].split("|");
+        var is_sleep=instru_sequence(beat_instruments);
+        if(success_time<instruments.length&&success_continue){
+            success_time++;
+            sleep(this,bpm);
+            this.NextStep=function(){
+                instru_success(instruments,bpm);
+            }
+        }
+    }
+    function instru_sequence(beat_instruments) {
+        //i不知道
+        for (var j = 0; j < beat_instruments.length; j++) {
+            //  music:"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"
+            if (beat_instruments[j].indexOf("cr") != -1) {
+                document.getElementById("drums_page").contentWindow.crash();
+            } else if (beat_instruments[j].indexOf("ki") != -1) {
+                document.getElementById("drums_page").contentWindow.kick();
+            } else if (beat_instruments[j].indexOf("sm") != -1) {
+                document.getElementById("drums_page").contentWindow.rightTom();
+            } else if (beat_instruments[j].indexOf("bi") != -1) {
+                document.getElementById("drums_page").contentWindow.leftTom();
+            } else if (beat_instruments[j].indexOf("hi") != -1) {
+                document.getElementById("drums_page").contentWindow.hiHat();
+            } else if (beat_instruments[j].indexOf("fl") != -1) {
+                document.getElementById("drums_page").contentWindow.floorTom();
+            } else if (beat_instruments[j].indexOf("sn") != -1) {
+                document.getElementById("drums_page").contentWindow.snare();
+            } else {
+                if(beat_instruments.length==1) {
+//                    alert(beat_instruments.toString());
+                    //判断是否不打击任何。
+                    return "sleep";
+                }
+            }
+        }
+        return "ok";
+    }
 
+function sleep(obj,iMinSecond){
+    if (window.eventList==null) window.eventList=new Array();
+    var ind=-1;
+    for (var i=0;i<window.eventList.length;i++){
+        if (window.eventList[i]==null) {
+            window.eventList[i]=obj;
+            ind=i;
+            break;
+        }
+    }
+
+    if (ind==-1){
+        ind=window.eventList.length;
+        window.eventList[ind]=obj;
+    }
+    setTimeout("GoOn(" + ind + ")",1000);
+}
+
+function GoOn(ind){
+    var obj=window.eventList[ind];
+    window.eventList[ind]=null;
+    if (obj.NextStep) obj.NextStep();
+    else obj();
+}
 
 // Tempo varibles
-var bpm = 150;
-var interval = 60000 / bpm;
-var intervalId;
+//var bpm = 150;
+//var interval = 60000 / bpm;
+//var intervalId;
 // Set tempo
-function setTempo() {
-    window.clearInterval(intervalId);
-//    alert("ss2s");
-    intervalId = window.setInterval(sequencer, interval);
-}
-
-function sequencer () {
-//    alert("sss");
-    hiHat();
-}
-
+//function setTempo() {
+//    window.clearInterval(intervalId);
+////    alert("ss2s");
+//    intervalId = window.setInterval(sequencer, interval);
+//}
+//
+//function sequencer () {
+////    alert("sss");
+//    hiHat();
+//}
 
     </script>
 </head>

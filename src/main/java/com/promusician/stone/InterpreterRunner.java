@@ -57,7 +57,21 @@ public class InterpreterRunner {
     public static Code run(BasicParser basicParser, Environment basicEnv,Lexer lex,ArrayList arrayList){
         Code code=new Code();
         while (lex.peek(0) != Token.EOF) {
-            ASTree ast = basicParser.parse(lex);
+            ASTree ast=null;
+            try {
+                ast = basicParser.parse(lex);
+            }catch (ParseException e){
+                logger.debug(e.getMessage());
+                code.setError_msg(e.getMessage());
+                code.setError_code(PARSER_ERROR);
+                break;
+            }catch (Exception e){
+                logger.debug(e.getMessage());
+                code.setError_msg(e.getMessage());
+                code.setError_code(ERROR);
+                //????
+                break;
+            }
             if (!(ast instanceof NULLStmnt)) {
                 try {
                     Object o = ast.eval(basicEnv, arrayList);

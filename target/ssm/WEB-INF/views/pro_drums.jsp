@@ -15,6 +15,7 @@
     <![endif]-->
     <script src="../../assets/js/myjs/drumbeat.js"></script>
 </head>
+<%--<button onclick="text(this)">tap!</button>--%>
 <%--<button onclick="pro_close()">tap!</button>--%>
 <body>
 <div class="content">
