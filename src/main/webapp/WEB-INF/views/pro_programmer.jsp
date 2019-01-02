@@ -19,9 +19,6 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="../../assets/js/myjs/dont_move.js"></script>
-
-    <script src="../../assets/js/myjs/protextarea.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- all css here -->
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
@@ -36,7 +33,6 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="../../assets/js/myjs/dont_move.js"></script>
 </head>
 
 
@@ -95,42 +91,69 @@
     </div>
 </header>
 <!-- header area end -->
-<!-- contact area start -->
-<div class="contact-area bg_dark ptb--100">
+
+<!-- feature blog area start -->
+<section class="feature-blog bg_dark ptb--100" id="blog">
     <div class="container">
         <div class="msc-title section-title">
-            <span>Create Your own Music</span>
+            <span>Read</span>
+            <h2>our Syntactic introduction</h2>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="contact-content">
-                    <ul>
-                        <li>
-                            <i class="fa fa-map-marker"></i>Race Event BeFaster, UK, 2292 Peachtree Rd NW</li>
-                        <li>
-                            <i class="fa fa-phone"></i>+1 123 456 8798</li>
-                        <li>
-                            <i class="fa fa-envelope"></i>user@gmail.com</li>
-                    </ul>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog">
+                    <div class="blog-content">
+                        <h2><a href="#">
+                            This script language supports four operations of integers, supports variables, and some basic control statements.
+                            <br>You don't need to use <em>int i = 0</em>, but <em>i = 0</em>. We default that it's an int type and we don't accept other types.
+                            <br>Like java, semicolons are used at the end of sentences in this language; however, semicolons can also be omitted if they happen to change lines at the end of sentences
+                        </a></h2>
+                    </div>
+                    <div class="blog-thumb">
+                        <img src="../../assets/images/icon/logo.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <form>
-                    <textarea
-                            id="codeTextarea" rows="13" cols="70"
-                            class="newtextarea scroller_bar"
-                            placeholder="start your create here!"></textarea>
-                </form>
-                <script type="text/javascript">
-                    createTextAreaWithLines('codeTextarea');
-                </script>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog">
+                    <div class="blog-content">
+                        <h2>
+                            <a href="#">Here are some key words. And the special key word is rhy, which means a beat of a music.</a>
+                        </h2>
+                    </div>
+                    <div class="blog-thumb">
+                        <img src="../../assets/images/slider/syntax.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog">
+                    <div class="blog-content">
+                        <h2>
+                            <a href="#">Here are some fragments. To see more code, please click here.</a>
+                        </h2>
+                    </div>
+                    <div class="blog-thumb">
+                        <img src="../../assets/images/slider/grammer.png" alt="">
+                        <a href="blog.html" class="read-more">Read More
+                            <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</section>
+<!-- feature blog area end -->
+<!-- footer area start -->
+<div class="footer-area ptb--50">
+    <div class="container">
+        <div class="footer-content">
+            <p>Your music career start here</p>
+        </div>
+    </div>
 </div>
-</div>
-<!-- contact area end -->
-
+<!-- footer area end -->
 <!-- jquery latest version -->
 <script src="../../assets/js/vendor/jquery-2.2.4.min.js"></script>
 <!-- bootstrap 4 js -->

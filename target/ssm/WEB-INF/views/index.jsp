@@ -21,8 +21,14 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="../../assets/js/myjs/dont_move.js"></script>
-
+    <style>
+        .li_hint{
+            color: #fecc2f; font-size: 16px
+        }
+        .li_hint:hover{
+            color: #6c757d; font-size: 16px
+        }
+    </style>
 </head>
 
 
@@ -42,7 +48,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-3">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="<pro:url value="/"/>">
                             <img src="../../assets/images/icon/logo.png" alt="logo">
                         </a>
                     </div>
@@ -52,22 +58,22 @@
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
                                 <li class="active">
-                                    <a href="<pro:url value="/"/>">Home</a>
+                                    <a target="_blank" href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li>
-                                    <a href="WEB-INF/views/pro_programmer.jsp">Programmer</a>
+                                    <a target="_blank" href="<pro:url value="/programmer"/>">Programmer</a>
                                 </li>
                                 <li>
-                                    <a href="<pro:url value="/musician"/>">Musician</a>
+                                    <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
                                 <li>
-                                    <a href="#gallery">Gallery</a>
+                                    <a target="_blank" href="#gallery">Gallery</a>
                                 </li>
                                 <li>
-                                    <a href="#blog">blog</a>
+                                    <a target="_blank" href="#blog">blog</a>
                                 </li>
                                 <li>
-                                    <a href="#contact">Contact Us</a>
+                                    <a target="_blank" href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -87,13 +93,42 @@
         <div class="music-content">
             <h2>Your Music Career
                 <br> Starts Here</h2>
-            <a href="<pro:url value="/musician"/>">
+            <a target="_blank" href="<pro:url value="/musician"/>">
                 <i class="fa fa-play"></i>
             </a>
         </div>
     </div>
 </div>
 <!-- slider area end -->
+
+
+<!-- abt-music area start -->
+<section class="abt-music-area" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="abt-msc-content">
+                    <h2>Music&Program</h2>
+                    <h4>A Different Kind of music</h4>
+                    <p>As you can see, this is a totally different kind of playing music.Its all about drums.We call it proMusician which TIES programm and music together. </p>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <div class="msc-abt-right">
+                    <ul>
+                        <li><a class="li_hint" target="_blank" href="<pro:url  value="/programmer"/>" >Simple Grammar and Code(click here to see more)</a></li>
+                        <li><a class="li_hint" target="_blank" href="<pro:url value="/musician"/>" >Concise IDE and Image Translation</a></li>
+                        <li> Sint dolorem minus molestiae.</li>
+                        <li>assumenda minima illo cum nisi facilis</li>
+                        <li>sint repudiandae consequatur odit dolorum</li>
+                        <li>squos sit voluptate? Enim, repudiandae.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- abt-music area end -->
 
 <!-- jquery latest version -->
 <script src="../../assets/js/vendor/jquery-2.2.4.min.js"></script>

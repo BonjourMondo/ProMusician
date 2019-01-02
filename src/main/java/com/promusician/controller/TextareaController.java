@@ -84,7 +84,11 @@ public class TextareaController {
         if (StringUtils.isEmpty(s)){
             throw new Exception("传值空异常");
         }
+
+
         Code code=runnerService.CheckAndRun(s);
+
+
         //传值为json
         Map<String,String> map=new HashMap<>();
         map.put("code",code.getStrings().toString());

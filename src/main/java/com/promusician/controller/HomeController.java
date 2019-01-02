@@ -37,4 +37,9 @@ public class HomeController {
         return "pro_drums";
     }
 
+    @RequestMapping("/programmer")
+    public String pro_programmer(Model model){
+        return "pro_programmer";
+    }
+
 }

@@ -48,8 +48,10 @@
     <script src="../../assets/js/myjs/my_scrollbar.js"></script>
     <!--自定义的Css-->
     <link rel="stylesheet" href="../../assets/css/procss/proCss.css">
+    <!--打击乐器的js-->
+    <script src="../../assets/js/myjs/drumbeat.js"></script>
+    <!--弹窗的alert-->
     <script src="../../assets/js/myjs/alert.js"></script>
-
 
     <style type="text/css">
         /*text*/
@@ -100,6 +102,12 @@
             1px 0 #fff938,
             0 -1px #fff938;
         }
+        .span_text_hover{
+            text-shadow:-1px 0 #fff938,
+            0 1px #fff938,
+            1px 0 #fff938,
+            0 -1px #fff938;
+        }
         .span_KeyofWhile{
         }
         .span_KeyofRHY{
@@ -141,173 +149,6 @@
             vertical-align: middle;
         }
     </style>
-
-    <script>
-//        /textarea/start
-        function CheckAndRun(){
-//            alert("!!!");
-            var v=document.getElementById("codeTextarea");
-            var code=v.value;
-            $.ajax({
-                type: "POST",
-                url: "/textarea/start",
-                data: {str:code},
-                dataType: "json",
-                success: function(data){
-                    //调用乐器打击代码
-//                    alert("s");
-                    var instruments=data.code.split(",");
-                    var bpm=60000/data.bpm;
-                    if(data.error_code=="success"){
-                        //成功场景
-                        //处理字符串，并映射为Instrument
-                        success_time=0;//每次调用必须归零
-                        instru_success(instruments,bpm);
-                    }else if (data.error_code=="loops"){
-                        //循环场景
-                        loops_time=0;
-                        instr_loops(instruments,bpm);
-                    }else if(data.error_code=="parser_error"){
-//                      alert(data.error_msg);
-                        showToast({
-                            title:data.error_msg,
-                            icon:'meh',
-                            duration:3000,
-                            mask:true,
-                            success:function (res) {
-                                console.warn(JSON.stringify(res))
-                            }
-                        });
-//                        alert(data.error_msg);
-                    }else if(data.error_code=="stone_error"){
-                        showToast({
-                            title:data.error_msg,
-                            icon:'frown',
-                            duration:3000,
-                            mask:true,
-                            success:function (res) {
-                                console.warn(JSON.stringify(res))
-                            }
-                        });
-                    }else{
-                        showToast({
-                            title:data.error_msg,
-                            icon:'smile',
-                            duration:3000,
-                            mask:true,
-                            success:function (res) {
-                                console.warn(JSON.stringify(res))
-                            }
-                        });
-                    }
-                },
-                error:function(data){
-                    //donothing
-                    showToast({
-                        title:"后台发生处理错误",
-                        icon:'meh',
-                        duration:3000,
-                        mask:true,
-                        success:function (res) {
-                            console.warn(JSON.stringify(res))
-                        }
-                    });
-                }
-            });
-            return false;
-        }
-
-    var success_time=0;//success场景循环
-    var success_continue=true;//success场景是否停止打击乐
-    var loops_time=0;//loops场景循环
-    var loops_continue=true;//loops场景是否停止打击乐
-    function instr_loops(instruments,bpm) {
-        var beat_instruments = instruments[loops_time].split("|");
-        instru_sequence(beat_instruments);
-        if(loops_time<instruments.length&&loops_continue){
-            loops_time++;
-            sleep(this,bpm);
-            this.NextStep=function(){
-                instru_success(instruments,bpm);
-            }
-        }
-        if(loops_time>1000)
-            loops_time=0;
-    }
-    function instru_success(instruments,bpm) {
-        var beat_instruments = instruments[success_time].split("|");
-        instru_sequence(beat_instruments);
-        if(success_time<instruments.length&&success_continue){
-            success_time++;
-            sleep(this,bpm);
-            this.NextStep=function(){
-                instru_success(instruments,bpm);
-            }
-        }
-    }
-    function instru_sequence(beat_instruments) {
-        for (var j = 0; j < beat_instruments.length; j++) {
-            //  music:"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"
-            if (beat_instruments[j].indexOf("cr") != -1) {
-                document.getElementById("drums_page").contentWindow.crash();
-            } else if (beat_instruments[j].indexOf("ki") != -1) {
-                document.getElementById("drums_page").contentWindow.kick();
-            } else if (beat_instruments[j].indexOf("sm") != -1) {
-                document.getElementById("drums_page").contentWindow.rightTom();
-            } else if (beat_instruments[j].indexOf("bi") != -1) {
-                document.getElementById("drums_page").contentWindow.leftTom();
-            } else if (beat_instruments[j].indexOf("hi") != -1) {
-                document.getElementById("drums_page").contentWindow.hiHat();
-            } else if (beat_instruments[j].indexOf("fl") != -1) {
-                document.getElementById("drums_page").contentWindow.floorTom();
-            } else if (beat_instruments[j].indexOf("sn") != -1) {
-                document.getElementById("drums_page").contentWindow.snare();
-            }
-        }
-    }
-
-function sleep(obj,iMinSecond){
-    if (window.eventList==null) window.eventList=new Array();
-    var ind=-1;
-    for (var i=0;i<window.eventList.length;i++){
-        if (window.eventList[i]==null) {
-            window.eventList[i]=obj;
-            ind=i;
-            break;
-        }
-    }
-
-    if (ind==-1){
-        ind=window.eventList.length;
-        window.eventList[ind]=obj;
-    }
-    setTimeout("GoOn(" + ind + ")",iMinSecond);
-}
-
-function GoOn(ind){
-    var obj=window.eventList[ind];
-    window.eventList[ind]=null;
-    if (obj.NextStep) obj.NextStep();
-    else obj();
-}
-
-// Tempo varibles
-//var bpm = 150;
-//var interval = 60000 / bpm;
-//var intervalId;
-// Set tempo
-//function setTempo() {
-//    window.clearInterval(intervalId);
-////    alert("ss2s");
-//    intervalId = window.setInterval(sequencer, interval);
-//}
-//
-//function sequencer () {
-////    alert("sss");
-//    hiHat();
-//}
-
-    </script>
 </head>
 
 
@@ -370,25 +211,21 @@ function GoOn(ind){
 <iframe src="<pro:url value="/drums"/>" id="drums_page" style="position: absolute;margin-top: 10px;margin-left: 200px;z-index: 1000;"
         frameborder="0" width="220" scrolling="No"
         height="200" leftmargin="0" topmargin="0"></iframe>
-<div class="contact-area bg_dark ptb--100">
-    <div class="container">
+<div class="contact-area bg_dark ptb--100" style="background: url(../../assets/images/slider/mohu_bpm.jpg) center/cover no-repeat;">
+    <div class="container" >
         <div class="msc-title section-title">
             <span style="margin-right: 100px">Create Your own Music</span>
         </div>
-        <div class="row">
+        <div class="row" >
             <div class="col-md-7">
                 <div class='box box1' id='wrapper1'>
                     <div class="scroll textHint span_all" id="scrollOne">
-                        <%--<div class="row textHint" id="textHint">--%>
-                            <span class=\"span_lineNo\" id=“1">1&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <button class="bpm_btn bpm_btn-tooltip btn-sequencer" id="sequencer-visible-btn" aria-label="BPM"><i class="fa fa-th"></i></button>
-                            <span class="span_KeyofBPM">BPM&nbsp;</span>
-                            <br/>
-                            <button onclick="pro_close();">ssss</button>
-                            <span class=\"span_lineNo\" id=“1">1&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <span class="span_KeyofBPM">BPM&nbsp;</span>
-                        <span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE 20</span><br id="p20"><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE2 </span><br><span id="1" style="color:#F00">ELSE </span><br><span style="color:#F00">ELSE </span><br>
-                    </div>
+                            <span class="span_lineNo" id="1">1&nbsp;&nbsp;&nbsp;&nbsp;</span>bpm:Express rhythmic speed.&nbsp;&nbsp; <button class="bpm_btn bpm_btn-tooltip btn-sequencer" id="sequencer-visible-btn" aria-label="BPM"><i class="fa fa-th"></i></button>&nbsp;<span class="span_KeyofBPM span_text_hover">BPM&nbsp;</span>;<br>
+                            <span class="span_lineNo" id="2">2&nbsp;&nbsp;&nbsp;&nbsp;</span>times:Represents the number of hits.(you could never end it)&nbsp;&nbsp;<span class="span_KeyofTimes span_text_hover">TIMES&nbsp;</span>;<br>
+                            <span class="span_lineNo" id="3">3&nbsp;&nbsp;&nbsp;&nbsp;</span>if/elese,while:Same as java or other language can do&nbsp;&nbsp;<span class="span_KeyofIFELSE span_text_hover">IF&nbsp;</span>;<span class="span_KeyofIFELSE span_text_hover">ELSE&nbsp;</span>;<span class="span_KeyofWhile span_text_hover">WHILE&nbsp;</span>;<br>
+                            <span class="span_lineNo" id="4">3&nbsp;&nbsp;&nbsp;&nbsp;</span>rhy:Represent a beat.(short for rhythm)&nbsp;&nbsp;<span class="span_KeyofRHY span_text_hover">RHY&nbsp;</span><br/>
+                            <span class="span_lineNo" id="5">4&nbsp;&nbsp;&nbsp;&nbsp;</span>sn:<img class="" style="height: 30px;width: 30px" src="../../assets/images/proimage/snare.png" onclick="img_snare();">;&nbsp;fl:<img class="" style="height: 30px;width: 30px" src="../../assets/images/proimage/floor_tom.png" onclick="img_floorTom();">;&nbsp;hi:<img class="" style="height: 30px;width: 30px" src="../../assets/images/proimage/hi_hat.png" onclick="img_hihat();">;&nbsp;bi:<img class="" style="height: 30px;width: 30px" src="../../assets/images/proimage/left_tom.png" onclick="img_leftTom();">;&nbsp;sm:<img class="" style="height: 30px;width: 30px" src="../../assets/images/proimage/right_tom.png" onclick="img_rightTom();">;&nbsp;ki:<img class="" style="height: 30px;width: 30px" src="../../assets/images/proimage/kick.png" onclick="img_kick();">;&nbsp;cr:<img class="" style="height: 30px;width: 30px" src="../../assets/images/proimage/crash.png" onclick="img_crash();"><br>
+                       </div>
                 </div>
             </div>
             <div class="col-md-4">

@@ -19,7 +19,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class InterpreterRunner {
-    private static String file = "E:\\BounjourMonde\\SpringMVC\\ProMusician\\src\\main\\resources\\data\\lex.stone";
+    private static String file = "\\src\\main\\resources\\data\\lex.stone";
     public static Logger logger= LoggerFactory.getLogger(InterpreterRunner.class);
     public static final String LOOPS="loops";
     public static final String PARSER_ERROR="parser_error";
