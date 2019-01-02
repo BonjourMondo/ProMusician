@@ -1,6 +1,7 @@
 <!doctype html>
 <%@page isELIgnored="false"%>
 <%@ taglib prefix="pro" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html class="no-js" lang="en">
 
 <head>
@@ -21,14 +22,6 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <style>
-        .li_hint{
-            color: #fecc2f; font-size: 16px
-        }
-        .li_hint:hover{
-            color: #6c757d; font-size: 16px
-        }
-    </style>
 </head>
 
 
@@ -57,7 +50,7 @@
                     <div class="main-menu">
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
-                                <li class="active">
+                                <li>
                                     <a target="_blank" href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li>
@@ -66,7 +59,7 @@
                                 <li>
                                     <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
@@ -87,48 +80,54 @@
     </div>
 </header>
 <!-- header area end -->
-<!-- slider area start -->
-<div class="slider-area d-flex align-items-center" id="slider_firefly" data-zs-src='["assets/images/slider/music-bg1.jpg", "assets/images/slider/music-bg2.jpg", "assets/images/slider/music-bg3.jpg"]'>
+<!-- trainer area start -->
+<section class="trainer-area bg_black ptb--100" id="trainers">
     <div class="container">
-        <div class="music-content">
-            <h2>Your Music Career
-                <br> Starts Here</h2>
-            <a target="_blank" href="<pro:url value="/musician"/>">
-                <i class="fa fa-play"></i>
-            </a>
+        <div class="msc-title section-title">
+            <span>Meet</span>
+            <h2>Our Production</h2>
         </div>
-    </div>
-</div>
-<!-- slider area end -->
-
-
-<!-- abt-music area start -->
-<section class="abt-music-area" id="about">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="abt-msc-content">
-                    <h2>Music&Program</h2>
-                    <h4>A Different Kind of music</h4>
-                    <p>As you can see, this is a totally different kind of playing music.Its all about drums.We call it proMusician which TIES programm and music together. </p>
+        <div class="row">
+<c:forEach var="music"   items="${gallery}"   varStatus="status"  >
+            <div class="col-lg-4 col-md-6">
+                <div class="single-trainer trainer_s_three">
+                    <div class="thumb">
+                        <img src="${music.img_url}" alt="image">
+                    </div>
+                    <div class="content">
+                        <h4>${music.title}</h4>
+                        <p>${music.description}</p>
+                        <ul class="social">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-5 offset-lg-1">
-                <div class="msc-abt-right">
-                    <ul>
-                        <li><a class="li_hint" target="_blank" href="<pro:url  value="/programmer"/>" >Simple Grammar and Code(click here to see more)</a></li>
-                        <li><a class="li_hint" target="_blank" href="<pro:url value="/musician"/>" >Concise IDE and Image Translation</a></li>
-                        <li> Sint dolorem minus molestiae.</li>
-                        <li>assumenda minima illo cum nisi facilis</li>
-                        <li>sint repudiandae consequatur odit dolorum</li>
-                        <li>squos sit voluptate? Enim, repudiandae.</li>
-                    </ul>
-                </div>
-            </div>
+</c:forEach>
+
         </div>
     </div>
 </section>
-<!-- abt-music area end -->
+<!-- trainer area end -->
 
 <!-- jquery latest version -->
 <script src="../../assets/js/vendor/jquery-2.2.4.min.js"></script>

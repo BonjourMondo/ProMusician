@@ -67,7 +67,7 @@
                                     <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="#gallery">Gallery</a>
+                                    <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
                                     <a target="_blank" href="#blog">blog</a>

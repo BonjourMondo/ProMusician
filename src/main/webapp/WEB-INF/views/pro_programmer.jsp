@@ -1,3 +1,4 @@
+<%@ taglib prefix="pro" uri="http://www.springframework.org/tags" %>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -52,7 +53,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-3">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="<pro:url value="/"/>">
                             <img src="../../assets/images/icon/logo.png" alt="logo">
                         </a>
                     </div>
@@ -62,16 +63,16 @@
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
                                 <li>
-                                    <a href="index.jsp">Home</a>
+                                    <a target="_blank" href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li class="active">
-                                    <a href="pro_programmer.jsp">Programmer</a>
+                                    <a target="_blank" href="<pro:url value="/programmer"/>">Programmer</a>
                                 </li>
                                 <li>
-                                    <a href="pro_musician.jsp">Musician</a>
+                                    <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
                                 <li>
-                                    <a href="#gallery">gallery</a>
+                                    <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
                                     <a href="#blog">blog</a>
@@ -123,6 +124,9 @@
                     </div>
                     <div class="blog-thumb">
                         <img src="../../assets/images/slider/syntax.png" alt="">
+                        <a href="<pro:url value="/musician"/>" class="read-more">Practice Now
+                            <i class="fa fa-long-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -135,7 +139,7 @@
                     </div>
                     <div class="blog-thumb">
                         <img src="../../assets/images/slider/grammer.png" alt="">
-                        <a href="blog.html" class="read-more">Read More
+                        <a href="<pro:url value="/gallery"/>" class="read-more">Read More
                             <i class="fa fa-long-arrow-right"></i>
                         </a>
                     </div>
@@ -145,15 +149,6 @@
     </div>
 </section>
 <!-- feature blog area end -->
-<!-- footer area start -->
-<div class="footer-area ptb--50">
-    <div class="container">
-        <div class="footer-content">
-            <p>Your music career start here</p>
-        </div>
-    </div>
-</div>
-<!-- footer area end -->
 <!-- jquery latest version -->
 <script src="../../assets/js/vendor/jquery-2.2.4.min.js"></script>
 <!-- bootstrap 4 js -->

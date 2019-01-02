@@ -168,7 +168,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-3">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="<pro:url value="/"/>">
                             <img src="../../assets/images/icon/logo.png" alt="logo">
                         </a>
                     </div>
@@ -178,16 +178,16 @@
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
                                 <li>
-                                    <a href="index.jsp">Home</a>
+                                    <a target="_blank" href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li>
-                                    <a href="pro_programmer.jsp">Programmer</a>
+                                    <a target="_blank" href="<pro:url value="/programmer"/>">Programmer</a>
                                 </li>
                                 <li class="active">
-                                    <a href="pro_musician.jsp">Musician</a>
+                                    <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
                                 <li>
-                                    <a href="#gallery">gallery</a>
+                                    <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
                                     <a href="#blog">blog</a>
