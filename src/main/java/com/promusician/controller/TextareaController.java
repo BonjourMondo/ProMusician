@@ -62,8 +62,10 @@ public class TextareaController {
     }
 
     @RequestMapping(value = "/commit")
-    public String getCommitText(Model model) throws IOException {
-        commitService.CheckandCommit();
+    public String getCommitText(HttpServletRequest request,HttpServletResponse response) throws IOException {
+        String title=request.getParameter("title");
+        String description=request.getParameter("description");
+        commitService.CheckandCommit(description,title);
         return "success_commit";
     }
 

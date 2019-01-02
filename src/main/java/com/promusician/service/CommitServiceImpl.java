@@ -1,6 +1,9 @@
 package com.promusician.service;
 
 import com.promusician.kafka.KafkaMessageProducer;
+import com.promusician.mapper.MusicMapper;
+import com.promusician.model.GalleryDTO;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,13 +14,30 @@ public class CommitServiceImpl implements CommitService{
     public static Logger logger = LoggerFactory.getLogger(CommitServiceImpl.class);
     @Autowired
     private KafkaMessageProducer producer;
-    public void CheckandCommit(){
+
+    @Autowired
+    private MusicMapper musicMapper;
+
+    public void CheckandCommit(String description,String title){
+        //创建并保存文件
         try {
-            producer.send();
-        } catch (Exception e) {
-            //另外的方式提交
-            logger.debug("kafka出错，直接放入数据库中");
-//            e.printStackTrace();
+            GalleryDTO galleryDTO = new GalleryDTO();
+            if (!StringUtils.isEmpty(description))
+                galleryDTO.setDescription(description);
+            if (!StringUtils.isEmpty(title))
+                galleryDTO.setTitle(title);
+            //后期再改
+            galleryDTO.setFile_url("xxx");
+            galleryDTO.setImg_url("xxx");
+            musicMapper.saveMusic(galleryDTO);
+        }catch (Exception e){
+            try {
+                producer.send();
+            } catch (Exception e1) {
+                logger.debug("保存失败");
+//                e1.printStackTrace();
+            }
         }
+
     }
 }

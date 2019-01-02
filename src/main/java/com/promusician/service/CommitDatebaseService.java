@@ -1,7 +1,7 @@
 package com.promusician.service;
 
-import com.promusician.model.Music;
+import com.promusician.model.GalleryDTO;
 
 public interface CommitDatebaseService {
-    public Music selectByid(Integer id);
+    void saveMusic(GalleryDTO music);
 }

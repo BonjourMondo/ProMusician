@@ -1,8 +1,10 @@
 package com.promusician.kafka;
 
 import com.promusician.mapper.MusicMapper;
+import com.promusician.model.GalleryDTO;
 import com.promusician.model.Music;
 import com.promusician.service.CommitDatebaseService;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.clients.consumer.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,8 +41,16 @@ public class KafkaMessageConsumer extends Thread{
                 ConsumerRecords<String,String> records=consumer.poll(100);
                 for (ConsumerRecord<String,String> record: records) {
                     log.debug(record.topic()+" "+record.value());
-                    Music music=commitDatebaseService.selectByid(2);
-                    log.debug("the select id's name is "+music.getName());
+                    GalleryDTO galleryDTO=new GalleryDTO();
+                    if (!StringUtils.isEmpty(record.value()))
+                        galleryDTO.setDescription(record.value());
+                    if (!StringUtils.isEmpty(record.topic()))
+                        galleryDTO.setTitle(record.topic());
+                    //后期再改
+                    galleryDTO.setFile_url("xxx");
+                    galleryDTO.setImg_url("xxx");
+                    commitDatebaseService.saveMusic(galleryDTO);
+//                    log.debug("the select id's name is "+music.getName());
                 }
                 try {
                     consumer.commitAsync();

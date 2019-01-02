@@ -343,7 +343,7 @@
                         </a>
                     </div>
                     <div class="col-md-12">
-                        <a href="#" style="background: #feb52f;">
+                        <a href="https://blog.csdn.net/No_Game_No_Life_/article/details/84398985" target="_blank" style="background: #feb52f;">
 
                             Forum
                         </a>
@@ -362,9 +362,9 @@
                         </a>
                     </div>
                     <div class="col-md-12">
-                        <a href="<pro:url value="/textarea/commit"/>" style="background: #fe832f;">
-
-                            Commit
+                        <%--<a href="<pro:url value="/textarea/commit"/>" style="background: #fe832f;">--%>
+                        <a href="javascript:void(0)" class="demo0 wobble" style="background: #fe832f;">
+                            Submit
                         </a>
                     </div>
                 </div>
@@ -395,6 +395,55 @@
 <!-- google map -->
 <!---<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO_5h890WNShs_YLGivCBfs2U89qXR-7Y&callback=initMap"></script>--->
 <script src="../../assets/js/scripts.js"></script>
+
+<link rel="stylesheet" href="../../assets/js/commit/css/animate.css"/> <!-- 动画效果 -->
+<%--<link rel="stylesheet" href="../../assets/js/commit/css/common.css"/><!-- 页面基本样式 -->--%>
+
+<div id="HBox">
+    <form action="<pro:url value="/textarea/commit"/>" method="post">
+        <ul class="prolist">
+            <li>
+                <div class="logo">
+                    <img src="../../assets/images/icon/logo.png" alt="logo">
+                </div>
+            </li>
+            <li>
+                <strong style="color: #0b0b0b">Title  <font color="#ff0000"></font></strong>
+                <div class="fl"><input type="text" name="title" value="" class="title"/></div>
+            </li>
+            <li>
+                <strong style="color: #0b0b0b">Description <font color="#ff0000"></font></strong>
+                <div class="fl"><input type="text" name="description" value="" class="description"/></div>
+            </li>
+            <li><input type="submit" value="Submit" class="submitBtn" /></li>
+        </ul>
+    </form>
+</div><!-- HBox end -->
+<script src="../../assets/js/commit/js/jquery.hDialog.js"></script>
+<script>
+    $(function(){
+        var $el = $('.dialog');
+        $el.hDialog(); //默认调用
+
+        $('.submitBtn').click(function () {
+            var $title = $('.title');
+            var $description = $('.description');
+            if($title.val() == ''){
+                $.tooltip('Please enter the title...'); $title.focus();
+            }else if($description.val()==''){
+                $.tooltip('Please enter the description...'); $description.focus();
+            }
+        });
+
+        //页面加载完成后自动执行
+        $('#autoShow').hDialog({title:'????',autoShow: true});
+
+        //带标题的
+        $('.demo0').hDialog({title: 'Submission',height: 300});
+
+
+    });
+</script>
 </body>
 
 </html>

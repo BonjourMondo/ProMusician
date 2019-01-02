@@ -1,6 +1,7 @@
 package com.promusician.service;
 
 import com.promusician.mapper.MusicMapper;
+import com.promusician.model.GalleryDTO;
 import com.promusician.model.Music;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -12,9 +13,8 @@ public class CommitDatebseServiceImpl implements CommitDatebaseService {
     private MusicMapper musicMapper;
 
     @Override
-    @Cacheable("MusicSelect")
-    public Music selectByid(Integer id){
-        Music music=musicMapper.selectMusicById(id);
-        return music;
+//    @Cacheable("MusicSelect")
+    public void saveMusic(GalleryDTO music){
+        musicMapper.saveMusic(music);
     }
 }
