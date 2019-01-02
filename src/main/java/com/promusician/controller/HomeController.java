@@ -3,14 +3,17 @@ package com.promusician.controller;
 import com.promusician.model.GalleryDTO;
 import com.promusician.service.GalleryService;
 import com.promusician.util.Util;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.*;
 import java.util.List;
@@ -30,10 +33,9 @@ public class HomeController {
     }
 
     @RequestMapping("/musician")
-    public String pro_musician(Model model) throws IOException {
+    public String pro_musician(Model model,@RequestParam(value = "path",defaultValue = "data/lex.stone") String path) throws IOException {
         //相对路径
-        String pathname = "data/lex.stone";
-        InputStream in = HomeController.class.getClassLoader().getResourceAsStream(pathname);
+        InputStream in = HomeController.class.getClassLoader().getResourceAsStream(path);
         String text= Util.inputStreamToString(in);
         model.addAttribute("template_promusician",text.trim());
         logger.debug("成功载入lex.stone");

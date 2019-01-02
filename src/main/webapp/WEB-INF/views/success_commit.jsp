@@ -122,28 +122,28 @@
         <h3 class="d-none">gallery</h3>
         <div class="gallery-masonary row" id="container">
             <div class="glry-item col-md-4">
-                <a class="expand-img" href="assets/images/gallery/gallery-img1.jpg">
-                    <img src="assets/images/gallery/gallery-img1.jpg" alt="image">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img1.jpg">
+                    <img src="../../assets/images/gallery/gallery-img1.jpg" alt="image">
                 </a>
             </div>
             <div class="glry-item col-md-4">
-                <a class="expand-img" href="assets/images/gallery/gallery-img2.jpg">
-                    <img src="assets/images/gallery/gallery-img2.jpg" alt="image">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img2.jpg">
+                    <img src="../../assets/images/gallery/gallery-img2.jpg" alt="image">
                 </a>
             </div>
             <div class="glry-item col-md-4">
-                <a class="expand-img" href="assets/images/gallery/gallery-img3.jpg">
-                    <img src="assets/images/gallery/gallery-img3.jpg" alt="image">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img3.jpg">
+                    <img src="../../assets/images/gallery/gallery-img3.jpg" alt="image">
                 </a>
             </div>
             <div class="glry-item col-md-4">
-                <a class="expand-img" href="assets/images/gallery/gallery-img4.jpg">
-                    <img src="assets/images/gallery/gallery-img4.jpg" alt="image">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img4.jpg">
+                    <img src="../../assets/images/gallery/gallery-img4.jpg" alt="image">
                 </a>
             </div>
             <div class="glry-item col-md-4">
-                <a class="expand-img" href="assets/images/gallery/gallery-img4.jpg">
-                    <img src="assets/images/gallery/gallery-img5.jpg" alt="image">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img4.jpg">
+                    <img src="../../assets/images/gallery/gallery-img5.jpg" alt="image">
                 </a>
             </div>
         </div>

@@ -67,10 +67,14 @@ public class TextareaController {
         return "success_commit";
     }
 
-
-    @RequestMapping(value = "/test")
-    public String test(){
-        return "success_commit";
+    @RequestMapping(value = "/debug")
+    public void debug(HttpServletRequest request,HttpServletResponse response) throws Exception {
+        String s=request.getParameter("str");
+        if (StringUtils.isEmpty(s)){
+            throw new Exception("传值空异常");
+        }
+        Code code=runnerService.CheckAndRun(s);
+        return_ajax(code,response);
     }
 
 
@@ -85,10 +89,12 @@ public class TextareaController {
             throw new Exception("传值空异常");
         }
 
-
         Code code=runnerService.CheckAndRun(s);
+        return_ajax(code,response);
+    }
 
 
+    public void return_ajax(Code code,HttpServletResponse response){
         //传值为json
         Map<String,String> map=new HashMap<>();
         map.put("code",code.getStrings().toString());

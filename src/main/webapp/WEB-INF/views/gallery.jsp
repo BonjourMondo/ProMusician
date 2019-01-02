@@ -92,11 +92,11 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-trainer trainer_s_three">
                     <div class="thumb">
-                        <img src="${music.img_url}" alt="image">
+                        <img src="${music.img_url}" alt="image" onclick=window.open('<pro:url value="/musician?path=${music.file_url}"/>') >
                     </div>
                     <div class="content">
-                        <h4>${music.title}</h4>
-                        <p>${music.description}</p>
+                        <h4 onclick=window.open('<pro:url value="/musician?path=${music.file_url}"/>')>${music.title}</h4>
+                        <p onclick=window.open('<pro:url value="/musician?path=${music.file_url}"/>')>${music.description}</p>
                         <ul class="social">
                             <li>
                                 <a href="#">
