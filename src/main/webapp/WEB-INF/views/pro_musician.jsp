@@ -435,7 +435,7 @@
                 $.tooltip('Please enter the description...'); $description.focus();
             }else{
                 document.getElementById('code').value=document.getElementById('codeTextarea').value;
-                alert( document.getElementById('code').value+"");
+//                alert( document.getElementById('code').value+"");
                 document.getElementById('form1').submit();
             }
 

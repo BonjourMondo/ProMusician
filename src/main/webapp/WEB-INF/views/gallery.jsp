@@ -1,5 +1,5 @@
 <!doctype html>
-<%@page isELIgnored="false"%>
+<%@page isELIgnored="false" pageEncoding="utf-8"%>
 <%@ taglib prefix="pro" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html class="no-js" lang="en">

@@ -41,7 +41,8 @@ public class HomeController {
             logger.debug(in.toString());
             text= Util.inputStreamToString(in);
         }catch (Exception e){
-            e.printStackTrace();
+            logger.debug("资源未准备好！");
+            return "fail_commit";
         }
         model.addAttribute("template_promusician",text.trim());
         logger.debug("成功载入lex.stone");

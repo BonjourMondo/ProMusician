@@ -70,3 +70,13 @@
 2019-01-03 10:19:24,630 [http-nio-8080-exec-3] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
 2019-01-03 10:19:29,656 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - java.io.ByteArrayInputStream@6c4cea29
 2019-01-03 10:19:29,657 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 14:01:21,974 [http-nio-8080-exec-8] [com.promusician.controller.HomeController] [DEBUG] - java.io.ByteArrayInputStream@7b445010
+2019-01-03 14:01:22,015 [http-nio-8080-exec-8] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 14:01:43,349 [http-nio-8080-exec-10] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 14:01:43,431 [http-nio-8080-exec-10] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: toAlice(String), �׸�����˿(String), data/stone/toAlice.stone(String), assets/stone/counting_stars.png(String)
+2019-01-03 14:01:43,517 [http-nio-8080-exec-10] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 14:01:45,822 [http-nio-8080-exec-3] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
+2019-01-03 14:01:45,823 [http-nio-8080-exec-3] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
+2019-01-03 14:01:45,847 [http-nio-8080-exec-3] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 3
+2019-01-03 14:01:49,739 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 资源未准备好！
+2019-01-03 14:01:55,923 [http-nio-8080-exec-1] [com.promusician.controller.HomeController] [DEBUG] - 资源未准备好！

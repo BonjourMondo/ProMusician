@@ -1,13 +1,12 @@
 <!doctype html>
 <%@page isELIgnored="false" pageEncoding="utf-8"%>
 <%@ taglib prefix="pro" uri="http://www.springframework.org/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Gallery--See the colorful world</title>
+    <title>Failed</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- all css here -->
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
@@ -22,6 +21,7 @@
     <link rel="stylesheet" href="../../assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
 
 
@@ -59,7 +59,7 @@
                                 <li>
                                     <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
@@ -80,55 +80,50 @@
     </div>
 </header>
 <!-- header area end -->
-<!-- trainer area start -->
-<section class="trainer-area bg_black ptb--100" id="trainers">
+<!-- facts area start -->
+<div class="facts-area bg_dark ptb--100">
     <div class="container">
         <div class="msc-title section-title">
-            <span>Meet</span>
-            <h2>Our Production</h2>
+            <span>oh</span>
+            <h2>资源未加载</h2>
         </div>
-        <div class="row">
-<c:forEach var="music"   items="${gallery}"   varStatus="status"  >
-            <div class="col-lg-4 col-md-6">
-                <div class="single-trainer trainer_s_three">
-                    <div class="thumb">
-                        <img src="${music.img_url}" alt="image" onclick=window.open('<pro:url value="/musician?path=${music.file_url}"/>') >
-                    </div>
-                    <div class="content">
-                        <h4 onclick=window.open('<pro:url value="/musician?path=${music.file_url}"/>')>${music.title}</h4>
-                        <p onclick=window.open('<pro:url value="/musician?path=${music.file_url}"/>')>${music.description}</p>
-                        <ul class="social">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-dribbble"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    </div>
+</div>
+<!-- facts area end -->
+<!-- gallery area start -->
+<section class="gallery-area bg_black pt--100 pb--60" id="gallery">
+    <div class="container">
+        <h3 class="d-none">gallery</h3>
+        <div class="gallery-masonary row" id="container">
+            <div class="glry-item col-md-4">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img1.jpg">
+                    <img src="../../assets/images/gallery/gallery-img1.jpg" alt="image">
+                </a>
             </div>
-</c:forEach>
-
+            <div class="glry-item col-md-4">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img2.jpg">
+                    <img src="../../assets/images/gallery/gallery-img2.jpg" alt="image">
+                </a>
+            </div>
+            <div class="glry-item col-md-4">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img3.jpg">
+                    <img src="../../assets/images/gallery/gallery-img3.jpg" alt="image">
+                </a>
+            </div>
+            <div class="glry-item col-md-4">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img4.jpg">
+                    <img src="../../assets/images/gallery/gallery-img4.jpg" alt="image">
+                </a>
+            </div>
+            <div class="glry-item col-md-4">
+                <a class="expand-img" href="../../assets/images/gallery/gallery-img4.jpg">
+                    <img src="../../assets/images/gallery/gallery-img5.jpg" alt="image">
+                </a>
+            </div>
         </div>
     </div>
 </section>
-<!-- trainer area end -->
-
+<!-- gallery area end -->
 <!-- jquery latest version -->
 <script src="../../assets/js/vendor/jquery-2.2.4.min.js"></script>
 <!-- bootstrap 4 js -->
