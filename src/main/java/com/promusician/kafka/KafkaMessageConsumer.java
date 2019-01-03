@@ -41,14 +41,15 @@ public class KafkaMessageConsumer extends Thread{
                 ConsumerRecords<String,String> records=consumer.poll(100);
                 for (ConsumerRecord<String,String> record: records) {
                     log.debug(record.topic()+" "+record.value());
+                    String[] s=record.value().split("\\|");
                     GalleryDTO galleryDTO=new GalleryDTO();
-                    if (!StringUtils.isEmpty(record.value()))
-                        galleryDTO.setDescription(record.value());
-                    if (!StringUtils.isEmpty(record.topic()))
-                        galleryDTO.setTitle(record.topic());
-                    //后期再改
-                    galleryDTO.setFile_url("xxx");
-                    galleryDTO.setImg_url("xxx");
+                    if (!StringUtils.isEmpty(s[1]))
+                        galleryDTO.setDescription(s[1]);
+                    if (!StringUtils.isEmpty(s[0])) {
+                        galleryDTO.setTitle(s[0]);
+                        galleryDTO.setFile_url("data/stone/"+s[0]+".stone");
+                    }
+                    galleryDTO.setImg_url("assets/stone/counting_stars.png");
                     commitDatebaseService.saveMusic(galleryDTO);
 //                    log.debug("the select id's name is "+music.getName());
                 }

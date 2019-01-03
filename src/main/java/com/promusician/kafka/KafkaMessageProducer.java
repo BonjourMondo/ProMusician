@@ -22,12 +22,12 @@ public static Logger logger = LoggerFactory.getLogger(KafkaMessageProducer.class
         producer = new KafkaProducer<>(producerProp);
     }
 
-    public void send()throws Exception{
+    public void send(String title,String description)throws Exception{
         logger.debug("发送Kafka消息中...");
         //file_path格式为 name-title:date  用于以后的识别
         ProducerRecord<String,String> record= new ProducerRecord<String, String>
                 ("Music",
-                        "file_path:Promusician2");
+                        title+"|"+description);
         producer.send(record, new Callback() {
             @Override
             public void onCompletion(RecordMetadata recordMetadata, Exception e) {

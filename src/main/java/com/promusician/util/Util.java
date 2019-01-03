@@ -225,4 +225,24 @@ public class Util {
         return map;
     }
 
+
+    public static void saveFile(String content,String path) {
+
+        FileWriter fwriter = null;
+        try {
+            fwriter = new FileWriter(path);
+            fwriter.write(content);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                fwriter.flush();
+                fwriter.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+    }
+
 }

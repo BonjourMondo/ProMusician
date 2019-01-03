@@ -65,6 +65,14 @@ public class TextareaController {
     public String getCommitText(HttpServletRequest request,HttpServletResponse response) throws IOException {
         String title=request.getParameter("title");
         String description=request.getParameter("description");
+        String code=request.getParameter("code");
+        if (StringUtils.isEmpty(code)){
+            logger.debug("code为空");
+        }
+
+//        logger.debug(analyse_text);
+        //绝对路径
+        Util.saveFile(code,"E:\\BounjourMonde\\SpringMVC\\ProMusician\\src\\main\\resources\\data\\stone\\"+title+".stone");
         commitService.CheckandCommit(description,title);
         return "success_commit";
     }

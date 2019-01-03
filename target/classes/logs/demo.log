@@ -1,89 +1,72 @@
-2019-01-02 13:27:57,879 [http-nio-8080-exec-5] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 14:02:40,373 [http-nio-8080-exec-1] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 14:06:49,314 [http-nio-8080-exec-1] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 14:07:06,048 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 14:14:21,877 [http-nio-8080-exec-5] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 15:01:50,242 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:01:50,372 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:01:50,482 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:12:32,856 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:12:32,857 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:12:32,860 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:15:33,110 [http-nio-8080-exec-1] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:15:33,111 [http-nio-8080-exec-1] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:15:33,113 [http-nio-8080-exec-1] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:16:20,485 [http-nio-8080-exec-2] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:16:20,486 [http-nio-8080-exec-2] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:16:20,489 [http-nio-8080-exec-2] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:18:23,031 [http-nio-8080-exec-6] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:18:23,033 [http-nio-8080-exec-6] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:18:23,036 [http-nio-8080-exec-6] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:20:56,473 [http-nio-8080-exec-8] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:20:56,476 [http-nio-8080-exec-8] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:20:56,480 [http-nio-8080-exec-8] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:55:58,465 [http-nio-8080-exec-7] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 15:56:05,646 [http-nio-8080-exec-8] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:56:05,700 [http-nio-8080-exec-8] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:56:05,744 [http-nio-8080-exec-8] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:57:52,770 [http-nio-8080-exec-5] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:57:52,772 [http-nio-8080-exec-5] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:57:52,774 [http-nio-8080-exec-5] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:59:25,216 [http-nio-8080-exec-6] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 15:59:25,217 [http-nio-8080-exec-6] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 15:59:25,218 [http-nio-8080-exec-6] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 15:59:27,564 [http-nio-8080-exec-7] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:00:05,308 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 16:00:05,309 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 16:00:05,313 [http-nio-8080-exec-4] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 16:00:07,450 [http-nio-8080-exec-10] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:01:21,068 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:01:36,649 [http-nio-8080-exec-9] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
-2019-01-02 16:01:36,650 [http-nio-8080-exec-9] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
-2019-01-02 16:01:36,654 [http-nio-8080-exec-9] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 2
-2019-01-02 16:18:41,720 [http-nio-8080-exec-5] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:18:45,441 [http-nio-8080-exec-7] [com.promusician.controller.TextareaController] [DEBUG] - {"code":"[cr|hi|ki|, cr|, sn|sm|fl|bi|, cr|hi|ki|, sn|sm|fl|bi|, cr|hi|ki|, sn|sm|fl|bi|, cr|hi|ki|, sn|sm|fl|bi|, cr|hi|ki|, sn|sm|fl|bi|]","error_code":"success","bpm":"60"}
-2019-01-02 16:18:51,507 [http-nio-8080-exec-8] [com.promusician.stone.InterpreterRunner] [DEBUG] - 未定义的名字： ss 第5行
-2019-01-02 16:18:51,508 [http-nio-8080-exec-8] [com.promusician.controller.TextareaController] [DEBUG] - {"code":"[]","error_msg":"未定义的名字： ss 第5行","error_code":"stone_error","bpm":"60"}
-2019-01-02 16:19:04,885 [http-nio-8080-exec-9] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 16:19:06,898 [http-nio-8080-exec-2] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 16:19:14,908 [http-nio-8080-exec-9] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 16:19:16,900 [http-nio-8080-exec-2] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 16:21:43,407 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:44:27,755 [http-nio-8080-exec-2] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:44:30,354 [http-nio-8080-exec-6] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 16:44:33,479 [http-nio-8080-exec-3] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 16:44:40,355 [http-nio-8080-exec-6] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 16:44:43,480 [http-nio-8080-exec-3] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 16:46:11,177 [http-nio-8080-exec-10] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:46:25,119 [http-nio-8080-exec-3] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:46:30,056 [http-nio-8080-exec-5] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 16:46:40,057 [http-nio-8080-exec-5] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 16:49:29,800 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:49:32,483 [http-nio-8080-exec-3] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:49:53,382 [http-nio-8080-exec-10] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:50:26,807 [http-nio-8080-exec-9] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:50:47,248 [http-nio-8080-exec-5] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:50:50,209 [http-nio-8080-exec-6] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 16:51:00,211 [http-nio-8080-exec-6] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 16:51:45,668 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:56:33,478 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:57:32,121 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 16:58:00,006 [http-nio-8080-exec-3] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:00:12,994 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:00:28,498 [http-nio-8080-exec-3] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 17:00:38,499 [http-nio-8080-exec-3] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 17:02:31,263 [http-nio-8080-exec-5] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:03:47,961 [http-nio-8080-exec-10] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:05:49,100 [http-nio-8080-exec-2] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:06:25,740 [http-nio-8080-exec-9] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:06:56,772 [http-nio-8080-exec-2] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:07:47,623 [http-nio-8080-exec-7] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:31:13,843 [http-nio-8080-exec-1] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:31:23,810 [http-nio-8080-exec-10] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:32:18,046 [http-nio-8080-exec-9] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
-2019-01-02 17:32:23,271 [http-nio-8080-exec-10] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 17:32:29,000 [http-nio-8080-exec-7] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 17:32:30,095 [http-nio-8080-exec-2] [com.promusician.kafka.KafkaMessageProducer] [DEBUG] - 发送Kafka消息中...
-2019-01-02 17:32:33,272 [http-nio-8080-exec-10] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 17:32:39,001 [http-nio-8080-exec-7] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
-2019-01-02 17:32:40,096 [http-nio-8080-exec-2] [com.promusician.kafka.KafkaMessageProducer] [ERROR] - 发生传递错误
+2019-01-03 09:19:53,373 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:21:51,194 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:22:02,748 [http-nio-8080-exec-1] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 09:22:02,818 [http-nio-8080-exec-1] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: c(String), c(String), xxx(String), xxx(String)
+2019-01-03 09:22:02,850 [http-nio-8080-exec-1] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 09:22:10,183 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 09:22:10,183 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: c(String), c(String), xxx(String), xxx(String)
+2019-01-03 09:22:10,263 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 09:22:35,944 [http-nio-8080-exec-7] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:22:42,277 [http-nio-8080-exec-2] [com.promusician.controller.TextareaController] [DEBUG] - {"code":"[cr|hi|ki|, cr|, sn|sm|fl|bi|, cr|hi|ki|, sn|sm|fl|bi|, cr|hi|ki|, sn|sm|fl|bi|, cr|hi|ki|, sn|sm|fl|bi|, cr|hi|ki|, sn|sm|fl|bi|]","error_code":"success","bpm":"60"}
+2019-01-03 09:30:39,427 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:32:26,525 [http-nio-8080-exec-8] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:34:12,180 [http-nio-8080-exec-10] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:34:14,851 [http-nio-8080-exec-8] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:34:39,303 [http-nio-8080-exec-10] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:36:36,322 [http-nio-8080-exec-2] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:36:42,828 [http-nio-8080-exec-7] [com.promusician.controller.TextareaController] [DEBUG] - COde为空
+2019-01-03 09:36:42,830 [http-nio-8080-exec-7] [com.promusician.controller.TextareaController] [DEBUG] - null
+2019-01-03 09:36:42,926 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 09:36:42,971 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: asd(String), asd(String), xxx(String), xxx(String)
+2019-01-03 09:36:43,052 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 09:40:34,871 [http-nio-8080-exec-3] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:40:47,986 [http-nio-8080-exec-2] [com.promusician.controller.TextareaController] [DEBUG] - bpm=60times=10i=10while times>0{ 	 if i%2==0{     		   rhy{cr;hi;ki}     	 }else{     	 //"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"     		   rhy{sn;sm;fl;bi}     	 }     if i==10{     rhy{cr;}     }     	 i=i+1     	 times=times-1;}
+2019-01-03 09:40:48,064 [http-nio-8080-exec-2] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 09:40:48,104 [http-nio-8080-exec-2] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: s(String), s(String), xxx(String), xxx(String)
+2019-01-03 09:40:48,134 [http-nio-8080-exec-2] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 09:46:36,086 [http-nio-8080-exec-9] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:58:44,145 [http-nio-8080-exec-3] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 09:58:50,419 [http-nio-8080-exec-6] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 09:58:50,458 [http-nio-8080-exec-6] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: sad(String), sad(String), xxx(String), xxx(String)
+2019-01-03 09:58:50,508 [http-nio-8080-exec-6] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 10:00:00,136 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:00:06,350 [http-nio-8080-exec-6] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 10:00:06,398 [http-nio-8080-exec-6] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: asd(String), asd(String), xxx(String), xxx(String)
+2019-01-03 10:00:06,518 [http-nio-8080-exec-6] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 10:01:48,886 [http-nio-8080-exec-1] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:01:50,656 [http-nio-8080-exec-5] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:01:56,133 [http-nio-8080-exec-8] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 10:01:56,134 [http-nio-8080-exec-8] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: hd(String), hd(String), xxx(String), xxx(String)
+2019-01-03 10:01:56,323 [http-nio-8080-exec-8] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 10:02:09,611 [http-nio-8080-exec-3] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
+2019-01-03 10:02:09,611 [http-nio-8080-exec-3] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
+2019-01-03 10:02:09,692 [http-nio-8080-exec-3] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 6
+2019-01-03 10:11:03,450 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:11:10,956 [http-nio-8080-exec-1] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 10:11:11,003 [http-nio-8080-exec-1] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: ssss(String), ssss(String), data/stone/ssss.stone(String), assets/stone/counting_stars.png(String)
+2019-01-03 10:11:11,046 [http-nio-8080-exec-1] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 10:12:04,566 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 10:12:04,567 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: toAlice(String), third one(String), data/stone/toAlice.stone(String), assets/stone/counting_stars.png(String)
+2019-01-03 10:12:04,845 [http-nio-8080-exec-7] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 10:12:07,318 [http-nio-8080-exec-9] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
+2019-01-03 10:12:07,319 [http-nio-8080-exec-9] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
+2019-01-03 10:12:07,344 [http-nio-8080-exec-9] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 3
+2019-01-03 10:12:24,155 [http-nio-8080-exec-2] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:14:50,635 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:14:56,736 [http-nio-8080-exec-3] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==>  Preparing: INSERT INTO gallery(title,description,file_url,img_url) VALUES (?,?,?,?) 
+2019-01-03 10:14:56,789 [http-nio-8080-exec-3] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - ==> Parameters: sf(String), fs(String), data/stone/sf.stone(String), assets/stone/counting_stars.png(String)
+2019-01-03 10:14:57,476 [http-nio-8080-exec-3] [com.promusician.mapper.MusicMapper.saveMusic] [DEBUG] - <==    Updates: 1
+2019-01-03 10:14:59,054 [http-nio-8080-exec-1] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
+2019-01-03 10:14:59,054 [http-nio-8080-exec-1] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
+2019-01-03 10:14:59,073 [http-nio-8080-exec-1] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 4
+2019-01-03 10:15:06,187 [http-nio-8080-exec-7] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:15:08,896 [http-nio-8080-exec-4] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:19:14,446 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - java.io.ByteArrayInputStream@4b3cf7d8
+2019-01-03 10:19:14,455 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:19:21,345 [http-nio-8080-exec-5] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==>  Preparing: SELECT * FROM gallery 
+2019-01-03 10:19:21,388 [http-nio-8080-exec-5] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - ==> Parameters: 
+2019-01-03 10:19:21,412 [http-nio-8080-exec-5] [com.promusician.mapper.GalleryShowMapper.selectAllMusic] [DEBUG] - <==      Total: 4
+2019-01-03 10:19:24,628 [http-nio-8080-exec-3] [com.promusician.controller.HomeController] [DEBUG] - java.io.ByteArrayInputStream@794e6652
+2019-01-03 10:19:24,630 [http-nio-8080-exec-3] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone
+2019-01-03 10:19:29,656 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - java.io.ByteArrayInputStream@6c4cea29
+2019-01-03 10:19:29,657 [http-nio-8080-exec-6] [com.promusician.controller.HomeController] [DEBUG] - 成功载入lex.stone

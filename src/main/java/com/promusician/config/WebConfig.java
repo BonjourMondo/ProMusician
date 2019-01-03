@@ -39,5 +39,8 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         super.addResourceHandlers(registry);
+//        registry.addResourceHandler("/data/stone/**").addResourceLocations("E:\\BounjourMonde\\SpringMVC\\ProMusician\\src\\main\\resources\\data\\stone");
     }
+
+
 }

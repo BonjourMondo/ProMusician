@@ -35,8 +35,14 @@ public class HomeController {
     @RequestMapping("/musician")
     public String pro_musician(Model model,@RequestParam(value = "path",defaultValue = "data/lex.stone") String path) throws IOException {
         //相对路径
-        InputStream in = HomeController.class.getClassLoader().getResourceAsStream(path);
-        String text= Util.inputStreamToString(in);
+        String text="";
+        try {
+            InputStream in = HomeController.class.getClassLoader().getResourceAsStream(path);
+            logger.debug(in.toString());
+            text= Util.inputStreamToString(in);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         model.addAttribute("template_promusician",text.trim());
         logger.debug("成功载入lex.stone");
         return "pro_musician";

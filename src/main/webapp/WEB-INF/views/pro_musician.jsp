@@ -400,7 +400,7 @@
 <%--<link rel="stylesheet" href="../../assets/js/commit/css/common.css"/><!-- 页面基本样式 -->--%>
 
 <div id="HBox">
-    <form action="<pro:url value="/textarea/commit"/>" method="post">
+    <form id="form1" action="<pro:url value="/textarea/commit"/>" method="post" onsubmit="return false;">
         <ul class="prolist">
             <li>
                 <div class="logo">
@@ -415,7 +415,8 @@
                 <strong style="color: #0b0b0b">Description <font color="#ff0000"></font></strong>
                 <div class="fl"><input type="text" name="description" value="" class="description"/></div>
             </li>
-            <li><input type="submit" value="Submit" class="submitBtn" /></li>
+            <li style="display: none"><textarea name="code" id="code"></textarea></li>
+            <li><input type="submit" value="Submit" class="submitBtn"/></li>
         </ul>
     </form>
 </div><!-- HBox end -->
@@ -432,7 +433,12 @@
                 $.tooltip('Please enter the title...'); $title.focus();
             }else if($description.val()==''){
                 $.tooltip('Please enter the description...'); $description.focus();
+            }else{
+                document.getElementById('code').value=document.getElementById('codeTextarea').value;
+                alert( document.getElementById('code').value+"");
+                document.getElementById('form1').submit();
             }
+
         });
 
         //页面加载完成后自动执行

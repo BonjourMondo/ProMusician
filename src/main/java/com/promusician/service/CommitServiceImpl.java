@@ -27,12 +27,12 @@ public class CommitServiceImpl implements CommitService{
             if (!StringUtils.isEmpty(title))
                 galleryDTO.setTitle(title);
             //后期再改
-            galleryDTO.setFile_url("xxx");
-            galleryDTO.setImg_url("xxx");
+            galleryDTO.setFile_url("data/stone/"+title+".stone");
+            galleryDTO.setImg_url("assets/stone/counting_stars.png");
             musicMapper.saveMusic(galleryDTO);
         }catch (Exception e){
             try {
-                producer.send();
+                producer.send(title,description);
             } catch (Exception e1) {
                 logger.debug("保存失败");
 //                e1.printStackTrace();
