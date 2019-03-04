@@ -19,7 +19,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class InterpreterRunner {
-    private static String file = "\\src\\main\\resources\\data\\lex.stone";
+    private static String file = "src/main/resources/data/lex.stone";
     public static Logger logger= LoggerFactory.getLogger(InterpreterRunner.class);
     public static final String LOOPS="loops";
     public static final String PARSER_ERROR="parser_error";
@@ -78,7 +78,7 @@ public class InterpreterRunner {
                     if (null!=ast.child(0)) {
                         if ("bpm".equalsIgnoreCase(ast.child(0).toString())){
                             code.setBpm(o.toString());//设置BPM
-//                            System.out.println(o.toString());
+                            System.out.println(o.toString());
                         }
                     }
 
@@ -86,8 +86,7 @@ public class InterpreterRunner {
                     logger.debug(e.getMessage());
                     code.setError_msg("死循环");
                     code.setError_code(LOOPS);
-                    //出现死循环错误
-                    //后期应当报到前端提醒？
+                    //出现死循环 报告到前端一直循环
                     break;
                 } catch (StoneExcetion e) {
                     logger.debug(e.getMessage());

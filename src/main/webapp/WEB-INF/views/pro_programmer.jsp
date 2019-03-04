@@ -120,7 +120,7 @@
                 <div class="single-blog">
                     <div class="blog-content">
                         <h2>
-                            <a href="#">Here are some key words. And the special key word is rhy, which means a beat of a music.</a>
+                            <a href="<pro:url value="/musician"/>">Here are some key words. And the special key word is rhy, which means a beat of a music.</a>
                         </h2>
                     </div>
                     <div class="blog-thumb">
@@ -135,7 +135,7 @@
                 <div class="single-blog">
                     <div class="blog-content">
                         <h2>
-                            <a href="#">Here are some fragments. To see more code, please click here.</a>
+                            <a href="<pro:url value="/gallery"/>">Here are some fragments. To see more code, please click here.</a>
                         </h2>
                     </div>
                     <div class="blog-thumb">

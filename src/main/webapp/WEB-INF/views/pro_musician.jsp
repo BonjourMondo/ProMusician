@@ -399,8 +399,8 @@
 <link rel="stylesheet" href="../../assets/js/commit/css/animate.css"/> <!-- 动画效果 -->
 <%--<link rel="stylesheet" href="../../assets/js/commit/css/common.css"/><!-- 页面基本样式 -->--%>
 
-<div id="HBox">
-    <form id="form1" action="<pro:url value="/textarea/commit"/>" method="post" onsubmit="return false;">
+<div id="HBox" >
+    <form id="form1" action="<pro:url value="/textarea/commit"/>" method="post" onsubmit="return false;" style="background-image: url('../../assets/images/slider/music-bg3.jpg')">
         <ul class="prolist">
             <li>
                 <div class="logo">
@@ -408,11 +408,11 @@
                 </div>
             </li>
             <li>
-                <strong style="color: #0b0b0b">Title  <font color="#ff0000"></font></strong>
+                <strong style="color: #0b0b0b">  <font color="#ffcb2a">Title</font></strong>
                 <div class="fl"><input type="text" name="title" value="" class="title"/></div>
             </li>
             <li>
-                <strong style="color: #0b0b0b">Description <font color="#ff0000"></font></strong>
+                <strong style="color: #0b0b0b"> <font color="#ffcb2a">&nbsp;Description</font></strong>
                 <div class="fl"><input type="text" name="description" value="" class="description"/></div>
             </li>
             <li style="display: none"><textarea name="code" id="code"></textarea></li>
@@ -445,7 +445,7 @@
         $('#autoShow').hDialog({title:'????',autoShow: true});
 
         //带标题的
-        $('.demo0').hDialog({title: 'Submission',height: 300});
+        $('.demo0').hDialog({title: 'Submit',height: 300});
 
 
     });

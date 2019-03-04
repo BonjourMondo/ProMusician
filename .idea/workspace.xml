@@ -6,31 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de3622e1-c593-437d-a03b-eebcfb99303c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fail_commit.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/data/stone/sf.stone" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/data/stone/toAlice.stone" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/data/stone/sf.stone" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/data/stone/sf.stone" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/controller/HomeController.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/controller/HomeController.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/promusician/controller/HomeController.class" />
+    <list default="true" id="de3622e1-c593-437d-a03b-eebcfb99303c" name="Default" comment="some fix">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/stone/InterpreterRunner.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/stone/InterpreterRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/stone/LexerRunner.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/stone/LexerRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/promusician/stone/ParserRunner.class" afterPath="$PROJECT_DIR$/target/classes/com/promusician/stone/ParserRunner.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/controller/HomeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/stone/InterpreterRunner.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/stone/InterpreterRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/stone/LexerRunner.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/stone/LexerRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/stone/ParserRunner.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/stone/ParserRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/NumberLiteral.java" afterPath="$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/NumberLiteral.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/data/lex.stone" afterPath="$PROJECT_DIR$/src/main/resources/data/lex.stone" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/logs/demo.log" afterPath="$PROJECT_DIR$/src/main/resources/logs/demo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_programmer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_programmer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success_commit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success_commit.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logs/demo.log" afterPath="$PROJECT_DIR$/target/classes/logs/demo.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/logs/demo.log" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/logs/demo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/gallery.jsp" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/gallery.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/pro_musician.jsp" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/pro_musician.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/pro_programmer.jsp" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/pro_programmer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/success_commit.jsp" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/success_commit.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,154 +34,68 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CommitServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/CommitServiceImpl.java">
+    <leaf>
+      <file leaf-file-name="BasicParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/BasicParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+            <state relative-caret-position="2181">
+              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3554#3555#0" expanded="true" />
+                <element signature="e#3597#3598#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/controller/HomeController.java">
+      <file leaf-file-name="InterpreterRunner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/InterpreterRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="success_commit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success_commit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fail_commit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fail_commit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2464">
-              <caret line="88" column="14" lean-forward="false" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pro_drums.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_drums.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pro_musician.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="419" column="13" lean-forward="false" selection-start-line="420" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
+            <state relative-caret-position="417">
+              <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
               <folding>
-                <marker date="1546495615084" expanded="true" signature="8549:8555" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8555:8561" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8561:8567" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8567:8573" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8607:8613" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8613:8619" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8759:8765" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8814:8820" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8921:8927" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8927:8933" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8933:8939" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="8939:8945" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9012:9018" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9018:9024" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9077:9083" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9184:9190" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9190:9196" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9196:9202" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9202:9208" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9267:9273" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9273:9279" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9330:9336" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9397:9403" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9464:9470" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9571:9577" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9577:9583" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9583:9589" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9589:9595" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9641:9647" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9647:9653" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9702:9708" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9809:9815" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9815:9821" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9821:9827" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9827:9833" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="9867:9891" ph="..." />
-                <marker date="1546495615084" expanded="true" signature="9967:9973" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="10000:10024" ph="..." />
-                <marker date="1546495615084" expanded="true" signature="10107:10113" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="10140:10164" ph="..." />
-                <marker date="1546495615084" expanded="true" signature="10241:10247" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="10274:10298" ph="..." />
-                <marker date="1546495615084" expanded="true" signature="10379:10385" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="10412:10436" ph="..." />
-                <marker date="1546495615084" expanded="true" signature="10519:10525" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="10552:10576" ph="..." />
-                <marker date="1546495615084" expanded="true" signature="10650:10656" ph="&amp;nbsp;" />
-                <marker date="1546495615084" expanded="true" signature="10683:10707" ph="..." />
-                <marker date="1546495615084" expanded="false" signature="17973:17993" ph="..." />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pro_programmer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_programmer.jsp">
+      <file leaf-file-name="NumberLiteral.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/NumberLiteral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+            <state relative-caret-position="364">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp">
+      <file leaf-file-name="ASTLeaf.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/ASTLeaf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="224">
+              <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextareaController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/controller/TextareaController.java">
+      <file leaf-file-name="lex.stone" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/data/lex.stone">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+            <state relative-caret-position="420">
+              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RhyStmnt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/RhyStmnt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -217,8 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sequencer-visible-btn</find>
-      <find>sequencer-active-btn</find>
       <find>audio</find>
       <find>background-image</find>
       <find>Cras</find>
@@ -247,6 +151,8 @@
       <find>.min.js</find>
       <find>commit</find>
       <find>split</find>
+      <find>Forum</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -263,11 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/promusician/service/AnalyserService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/data/lex.stone" />
-        <option value="$PROJECT_DIR$/src/main/java/com/promusician/model/Code.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/promusician/service/RunnerService.java" />
-        <option value="E:/SoftwareEngineering/apache-maven-3.2.3/myrepository/com/alibaba/fastjson/1.2.7/fastjson-1.2.7.jar!/com/alibaba/fastjson/JSON.class" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/svgDrums/js/script.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_drums.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/Parser.java" />
@@ -279,11 +180,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/service/RunnerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/myjs/drumbeat.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/Exception/ParseException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/LexerRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/InterpreterRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/ParserRunner.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/myjs/alert.js" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/logs/demo.log" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/model/GalleryDTO.java" />
@@ -310,10 +207,19 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success_commit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_programmer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fail_commit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drums.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/promusician/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_programmer.jsp" />
+        <option value="E:/SoftwareEngineering/apache-maven-3.2.3/myrepository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisPoolConfig.class" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/LexerRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/ParserRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/token/IdToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/InterpreterRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/NumberLiteral.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/data/lex.stone" />
       </list>
     </option>
   </component>
@@ -345,8 +251,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-52" />
-    <option name="y" value="139" />
+    <option name="x" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1077" />
   </component>
@@ -384,6 +289,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -424,7 +332,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="promusician" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="stone" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
@@ -433,7 +341,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="promusician" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="stone" type="462c0819:PsiDirectoryNode" />
+              <item name="ast" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
@@ -442,43 +351,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="promusician" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="promusician" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="promusician" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="promusician" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="promusician" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="stone" type="462c0819:PsiDirectoryNode" />
+              <item name="token" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
@@ -509,112 +383,14 @@
               <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="music-blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="commit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="commit" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="commit" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProMusician" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProMusician" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -665,7 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat7">
+  <component name="RunManager" selected="Application.InterpreterRunner">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1000,6 +776,11 @@
       <workItem from="1546478156881" duration="4750000" />
       <workItem from="1546495172037" duration="444000" />
       <workItem from="1546495721431" duration="169000" />
+      <workItem from="1546508943985" duration="64000" />
+      <workItem from="1546931647051" duration="323000" />
+      <workItem from="1547018456793" duration="3103000" />
+      <workItem from="1547083516784" duration="2321000" />
+      <workItem from="1551684918772" duration="2104000" />
     </task>
     <servers />
   </component>
@@ -1036,7 +817,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352268000" />
+    <option name="totallyTimeSpent" value="360183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1060,11 +841,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32346243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21753986" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26287553" sideWeight="0.493266" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.277897" sideWeight="0.493266" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24839056" sideWeight="0.506734" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1096,15 +877,15 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31548974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24943052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24517168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21753986" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.277897" sideWeight="0.493266" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24839056" sideWeight="0.506734" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32225913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1115,6 +896,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,45 +928,196 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/RootConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/commit/js/jquery.hDialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/slider/music-bg1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/trainer/musician/musician-img3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/trainer/musician/musician-img2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/trainer/musician/musician-img1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/slider/game-hero-bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/slider/grammer.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/slider/music-bg2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/slider/syntax.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/slider/slider-bg2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/slider/music-bg3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11704">
+          <caret line="418" column="76" lean-forward="false" selection-start-line="418" selection-start-column="76" selection-end-line="418" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_programmer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/kafka/KafkaMessageProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/promusician/config/MybatisConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/SoftwareEngineering/apache-maven-3.2.3/myrepository/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar!/org/springframework/context/annotation/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/promusician/config/RedisConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/SoftwareEngineering/apache-maven-3.2.3/myrepository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisPoolConfig.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/kafka/KafkaXmlConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/model/GalleryDTO.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/com/promusician/config/AspectConfig.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/GalleryService.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/com/promusician/config/ServiceConfig.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/promusician/config/WebInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/promusician/service/AnalyserService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/creep.stone">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/havana.stone">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/toAlice.stone">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/counting_stars.stone">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/kafka/KafkaMessageConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/GalleryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/lex.stone">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="1080">
+          <caret line="263" column="17" lean-forward="false" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1189,402 +1125,185 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/model/Music.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3452">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/token/StrToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/LexerRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ParserRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/token/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/token/NumToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/token/IdToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/env/BasicEnv.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/model/Code.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/NULLStmnt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="112">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/promusician/config/MybatisConfigTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/Name.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="308">
+          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/AspectConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/StringLiteral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/NegativeExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/PrimaryExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/BinaryExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/RhyStmnt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/BasicParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2181">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#3554#3555#0" expanded="true" />
+            <element signature="e#3597#3598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/lex.stone">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/ASTLeaf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/KafkaConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/ast/NumberLiteral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="364">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/RedisConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/stone/InterpreterRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/ServiceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/WebInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/dubbo/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/dubbo/Provider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="478" column="18" lean-forward="true" selection-start-line="478" selection-start-column="18" selection-end-line="478" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/counting_stars.stone">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/havana.stone">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/consumer.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/myjs/drumbeat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="72" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/commit/js/jquery.hDialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="417">
+          <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
           <folding>
-            <marker date="1481286128966" expanded="true" signature="3562:3748" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="3763:3807" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="3891:4031" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="4136:4254" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="6732:6926" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="7124:7297" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="7874:8084" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="8202:8412" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="9028:9207" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="10246:10315" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="10384:10476" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="10557:10663" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="10756:10792" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="10866:10964" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="11055:11111" ph="..." />
-            <marker date="1481286128966" expanded="true" signature="11258:11472" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/commit/js/jquery-1.9.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9772">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/blog/music-blog/music-blog-img1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/commit/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="101" column="1" lean-forward="false" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/mapper/GalleryShowMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/mapper/GalleryShowMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <marker date="1546411506994" expanded="true" signature="285:306" ph="SELECT * FRO... gallery" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/mapper/MusicMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1546420787189" expanded="true" signature="300:411" ph="INSERT INTO music... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/CommitDatebaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/mapper/MusicMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/hd.stone" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/asd.stone" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/sad.stone" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/CommitDatebseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/CommitService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/kafka/KafkaMessageConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/stone/toAlice.stone" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/kafka/KafkaMessageProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/service/CommitServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/controller/TextareaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_programmer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_drums.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fail_commit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2464">
-          <caret line="88" column="14" lean-forward="false" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/promusician/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success_commit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pro_musician.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="419" column="13" lean-forward="false" selection-start-line="420" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
-          <folding>
-            <marker date="1546495615084" expanded="true" signature="8549:8555" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8555:8561" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8561:8567" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8567:8573" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8607:8613" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8613:8619" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8759:8765" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8814:8820" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8921:8927" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8927:8933" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8933:8939" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="8939:8945" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9012:9018" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9018:9024" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9077:9083" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9184:9190" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9190:9196" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9196:9202" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9202:9208" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9267:9273" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9273:9279" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9330:9336" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9397:9403" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9464:9470" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9571:9577" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9577:9583" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9583:9589" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9589:9595" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9641:9647" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9647:9653" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9702:9708" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9809:9815" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9815:9821" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9821:9827" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9827:9833" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="9867:9891" ph="..." />
-            <marker date="1546495615084" expanded="true" signature="9967:9973" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="10000:10024" ph="..." />
-            <marker date="1546495615084" expanded="true" signature="10107:10113" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="10140:10164" ph="..." />
-            <marker date="1546495615084" expanded="true" signature="10241:10247" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="10274:10298" ph="..." />
-            <marker date="1546495615084" expanded="true" signature="10379:10385" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="10412:10436" ph="..." />
-            <marker date="1546495615084" expanded="true" signature="10519:10525" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="10552:10576" ph="..." />
-            <marker date="1546495615084" expanded="true" signature="10650:10656" ph="&amp;nbsp;" />
-            <marker date="1546495615084" expanded="true" signature="10683:10707" ph="..." />
-            <marker date="1546495615084" expanded="false" signature="17973:17993" ph="..." />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
           </folding>
         </state>
       </provider>

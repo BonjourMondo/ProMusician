@@ -9,7 +9,7 @@ import java.io.FileReader;
 
 public class LexerRunner {
     public static void main(String[] args) throws FileNotFoundException {
-        File code = new File("\\src\\main\\resources\\data\\lex.stone");
+        File code = new File("src/main/resources/data/lex.stone");
         Lexer lexer;
 
         lexer = new Lexer(new FileReader(code));
