@@ -76,9 +76,10 @@ public class InterpreterRunner {
                 try {
                     Object o = ast.eval(basicEnv, arrayList);
                     if (null!=ast.child(0)) {
+//                        System.out.println(ast.child(0).toString());
                         if ("bpm".equalsIgnoreCase(ast.child(0).toString())){
                             code.setBpm(o.toString());//设置BPM
-                            System.out.println(o.toString());
+//                            System.out.println(o.toString());
                         }
                     }
 

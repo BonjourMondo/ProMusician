@@ -20,7 +20,7 @@ public class BasicParser {
 	    |simple
 	    |"rhy" problock
     problock:"{"[music]{(";"|EOL)music}"}"
-    music:"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"
+    music:"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"|"hop"
     program:[statement](";"|EOL)
      */
 
@@ -64,7 +64,8 @@ public class BasicParser {
             rule().token("hi"),
             rule().token("bi"),
             rule().token("sm"),
-            rule().token("ki"));
+            rule().token("ki"),
+            rule().token("hop"));
 
 
     // problock:"{"{[music](";"|EOL)}"}"

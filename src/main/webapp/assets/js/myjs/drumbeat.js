@@ -78,7 +78,7 @@ var loops_time=0;//loops场景循环
 var loops_continue=true;//loops场景是否停止打击乐
 function instr_loops(instruments,bpm) {
     var beat_instruments = instruments[loops_time].split("|");
-    instru_sequence(beat_instruments);
+    instru_sequence(beat_instruments,bpm);
     if(loops_time<instruments.length&&loops_continue){
         loops_time++;
         sleep(this,bpm);
@@ -91,7 +91,7 @@ function instr_loops(instruments,bpm) {
 }
 function instru_success(instruments,bpm) {
     var beat_instruments = instruments[success_time].split("|");
-    instru_sequence(beat_instruments);
+    instru_sequence(beat_instruments,bpm);
     if(success_time<instruments.length&&success_continue){
         success_time++;
         sleep(this,bpm);
@@ -100,8 +100,14 @@ function instru_success(instruments,bpm) {
         }
     }
 }
-function instru_sequence(beat_instruments) {
+function instru_sequence(beat_instruments,bpm) {
     for (var j = 0; j < beat_instruments.length; j++) {
+        if(beat_instruments[j].indexOf("hop") != -1){
+            setInterval(function () {
+            //跳过该符号
+            },bpm);
+            break;
+        }
         //  music:"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"
         if (beat_instruments[j].indexOf("cr") != -1) {
             document.getElementById("drums_page").contentWindow.crash();

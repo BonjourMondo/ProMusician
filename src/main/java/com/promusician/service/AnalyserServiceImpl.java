@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 @Service("analyserservice")
 public class AnalyserServiceImpl implements AnalyserService {
-    ArrayList<String> instruments=new ArrayList<>(Arrays.asList("sn","fl","hi","bi","sm","ki","cr"));
+    ArrayList<String> instruments=new ArrayList<>(Arrays.asList("sn","fl","hi","bi","sm","ki","cr","hop"));
 
     @Override
     public String analyseInputText(String str) {
@@ -71,8 +71,10 @@ public class AnalyserServiceImpl implements AnalyserService {
     }
 
     public String judgeInstrument(String s){
-        //"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"
+        //"sn"|"fl"|"hi"|"bi"|"sm"|"ki"|"cr"|"hop"
         switch (s){
+            case "hop":
+                return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/hop.png\" \">";
             case "cr":
                 return "<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/crash.png\" onclick=\"img_crash();\">";/*<span class="span_KeyofIntrument">&nbsp;&nbsp;Crash-Cymbol</span>*/
             case "hi":

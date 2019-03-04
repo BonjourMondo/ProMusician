@@ -11,7 +11,7 @@ import java.util.List;
 
 public class RhyStmnt extends ASTList {
     public static Logger logger= LoggerFactory.getLogger(RhyStmnt.class);
-    ArrayList<String> arrayList=new ArrayList<>(Arrays.asList("cr","sn","fl","hi","bi","sm", "ki"));
+    ArrayList<String> arrayList=new ArrayList<>(Arrays.asList("cr","sn","fl","hi","bi","sm", "ki","hop"));
     public static int loop_time=0;
     public static final int MAX_LOOP=1000;
 
