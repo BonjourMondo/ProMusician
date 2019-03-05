@@ -350,6 +350,13 @@
     </div>
     </div>
 </div>
+<div class="footer-area ptb--50">
+    <div class="container">
+        <div class="footer-content">
+            <p>Bounjour Monde</p>
+        </div>
+    </div>
+</div>
 
 <!-- contact area end -->
 

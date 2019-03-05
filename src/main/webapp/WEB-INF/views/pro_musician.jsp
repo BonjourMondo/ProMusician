@@ -56,7 +56,7 @@
     <style type="text/css">
         /*text*/
         .box {
-            width: 600px; height: 375px; border:3px solid #453cad; margin: 10px auto; padding: 0; overflow: hidden;
+            width: 500px; height: 375px; border:3px solid #453cad; margin: 10px auto; padding: 0; overflow: hidden;
         }
         .box1 {
             padding: 20px;
@@ -304,7 +304,11 @@
 <iframe src="<pro:url value="/drums"/>" id="drums_page" style="position: absolute;margin-top: 10px;margin-left: 200px;z-index: 1000;"
         frameborder="0" width="220" scrolling="No"
         height="200" leftmargin="0" topmargin="0"></iframe>
-<div class="contact-area bg_dark ptb--100" style="background: url(../../assets/images/slider/mohu_bpm.jpg) center/cover no-repeat;">
+<div class="contact-area bg_dark ptb--100" style="
+        background: url(../../assets/images/slider/mohu_bpm.jpg) center/cover no-repeat;"
+        padding="0px"
+        margin="0px"
+>
     <div class="container" >
         <div class="msc-title section-title">
             <span style="margin-right: 100px">Create Your own Music</span>
@@ -448,7 +452,7 @@
         });
 
         //页面加载完成后自动执行
-        $('#autoShow').hDialog({title:'????',autoShow: true});
+        // $('#autoShow').hDialog({title:'????',autoShow: true});
 
         //带标题的
         $('.demo0').hDialog({title: 'Submit',height: 300});

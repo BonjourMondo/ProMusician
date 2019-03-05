@@ -72,7 +72,7 @@ public class TextareaController {
 
 //        logger.debug(analyse_text);
         //绝对路径
-        Util.saveFile(code,"E:\\BounjourMonde\\SpringMVC\\ProMusician\\src\\main\\resources\\data\\stone\\"+title+".stone");
+        Util.saveFile(code,"src/main/resources/data/stone"+title+".stone");
         commitService.CheckandCommit(description,title);
         return "success_commit";
     }
