@@ -25,6 +25,7 @@
 
 .textHint{
     user-select: none;
+    overflow: scroll;
 }
 
 .textHint img{

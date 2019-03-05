@@ -1,6 +1,7 @@
 package com.promusician.controller;
 
 import com.promusician.model.GalleryDTO;
+import com.promusician.service.AnalyserService;
 import com.promusician.service.GalleryService;
 import com.promusician.util.Util;
 import org.apache.commons.lang3.StringUtils;
@@ -22,6 +23,11 @@ import java.util.List;
 @RequestMapping(value={"/","/homepage"})
 public class HomeController {
     public static Logger logger= LoggerFactory.getLogger(HomeController.class);
+
+    @Autowired
+    @Qualifier("analyserservice")
+    private AnalyserService analyserService;
+
     @Autowired
     @Qualifier("galleryservice")
     private GalleryService galleryService;
@@ -33,17 +39,12 @@ public class HomeController {
     }
 
     @RequestMapping("/musician")
-    public String pro_musician(Model model,@RequestParam(value = "path",defaultValue = "data/lex.stone") String path) throws IOException {
+    public String pro_musician(Model model) throws IOException {
+        String path="data/lex.stone";
         //相对路径
         String text="";
-        try {
-            InputStream in = HomeController.class.getClassLoader().getResourceAsStream(path);
-            logger.debug(in.toString());
-            text= Util.inputStreamToString(in);
-        }catch (Exception e){
-            logger.debug("资源未准备好！");
-            return "fail_commit";
-        }
+        InputStream in = HomeController.class.getClassLoader().getResourceAsStream(path);
+        text= Util.inputStreamToString(in);
         model.addAttribute("template_promusician",text.trim());
         logger.debug("成功载入lex.stone");
         return "pro_musician";
@@ -66,4 +67,30 @@ public class HomeController {
         return "gallery";
     }
 
+    @RequestMapping("/visitor")
+    public String visitor(Model model,@RequestParam(value = "path",defaultValue = "data/lex.stone") String path){
+        //相对路径
+        String text="";
+        try {
+            InputStream in = HomeController.class.getClassLoader().getResourceAsStream(path);
+//            logger.debug(in.toString());
+            text= Util.inputStreamToString(in);
+        }catch (Exception e){
+            logger.debug("资源未准备好！");
+            return "fail_commit";
+        }
+
+        model.addAttribute("template_promusician",text.trim());
+        logger.debug("成功载入"+path);
+
+        //直接分析
+        String[] strings=text.split("\n");
+        String analyse_text="";//为了处理空格，否则会报错
+        for (String s:strings) {
+            analyse_text=analyse_text+s.trim()+"\n";
+        }
+        String analyseCode = analyserService.analyseInputText(analyse_text);
+        model.addAttribute("analyseCode",analyseCode);
+        return "pro_musician_for_gallery";
+    }
 }
