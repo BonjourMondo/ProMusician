@@ -51,22 +51,22 @@
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/"/>">Home</a>
+                                    <a   href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/programmer"/>">Programmer</a>
+                                    <a   href="<pro:url value="/programmer"/>">Programmer</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
+                                    <a   href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
+                                    <a   href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="#blog">blog</a>
+                                    <a   href="#blog">blog</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="#contact">Contact Us</a>
+                                    <a   href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                         </nav>

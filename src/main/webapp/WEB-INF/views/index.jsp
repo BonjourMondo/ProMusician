@@ -58,22 +58,22 @@
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
                                 <li class="active">
-                                    <a target="_blank" href="<pro:url value="/"/>">Home</a>
+                                    <a   href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/programmer"/>">Programmer</a>
+                                    <a   href="<pro:url value="/programmer"/>">Programmer</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
+                                    <a   href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
+                                    <a   href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="#blog">blog</a>
+                                    <a   href="#blog">blog</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="#contact">Contact Us</a>
+                                    <a   href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -93,7 +93,7 @@
         <div class="music-content">
             <h2>Your Music Career
                 <br> Starts Here</h2>
-            <a target="_blank" href="<pro:url value="/musician"/>">
+            <a   href="<pro:url value="/musician"/>">
                 <i class="fa fa-play"></i>
             </a>
         </div>
@@ -116,8 +116,8 @@
             <div class="col-lg-5 offset-lg-1">
                 <div class="msc-abt-right">
                     <ul>
-                        <li><a class="li_hint" target="_blank" href="<pro:url  value="/programmer"/>" >Simple Grammar and Code(click here to see more)</a></li>
-                        <li><a class="li_hint" target="_blank" href="<pro:url value="/musician"/>" >Concise IDE and Image Translation</a></li>
+                        <li><a class="li_hint"   href="<pro:url  value="/programmer"/>" >Simple Grammar and Code(click here to see more)</a></li>
+                        <li><a class="li_hint"   href="<pro:url value="/musician"/>" >Concise IDE and Image Translation</a></li>
                         <li> Sint dolorem minus molestiae.</li>
                         <li>assumenda minima illo cum nisi facilis</li>
                         <li>sint repudiandae consequatur odit dolorum</li>

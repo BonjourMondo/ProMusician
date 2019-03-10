@@ -56,11 +56,11 @@
     <style type="text/css">
         /*text*/
         .box {
-            width: 600px; height: 375px; border:3px solid #453cad; margin: 10px auto; padding: 0; overflow: hidden;
+            width: 600px; height: 375px; border:3px solid #453cad; margin: 10px auto; padding: 0; overflow: auto;
         }
         .box1 {
             padding: 20px;
-            /*overflow: auto;*/
+            overflow: auto;
         }
         .textbox{
             border:3px solid #453cad;
@@ -149,99 +149,6 @@
             vertical-align: middle;
         }
     </style>
-    <script>
-        function Debug(){
-//            alert("!!!");
-            var v=document.getElementById("codeTextarea");
-            var code=v.value;
-            $.ajax({
-                type: "POST",
-                url: "/textarea/debug",
-                data: {str:code},
-                dataType: "json",
-                success: function(data){
-                    //调用乐器打击代码
-//                    alert("s");
-                    if(data.error_code=="success"){
-                        showToast({
-                            title:"代码正确运行",
-                            icon:'smile',
-                            duration:3000,
-                            mask:true,
-                            success:function (res) {
-                                console.warn(JSON.stringify(res))
-                            }
-                        });
-                    }else if (data.error_code=="loops"){
-                        showToast({
-                            title:"代码正确运行,loops ∞",
-                            icon:'smile',
-                            duration:3000,
-                            mask:true,
-                            success:function (res) {
-                                console.warn(JSON.stringify(res))
-                            }
-                        });
-                    }else if(data.error_code=="parser_error"){
-//                      alert(data.error_msg);
-                        showToast({
-                            title:data.error_msg,
-                            icon:'meh',
-                            duration:3000,
-                            mask:true,
-                            success:function (res) {
-                                console.warn(JSON.stringify(res))
-                            }
-                        });
-//                        alert(data.error_msg);
-                    }else if(data.error_code=="stone_error"){
-                        showToast({
-                            title:data.error_msg,
-                            icon:'frown',
-                            duration:3000,
-                            mask:true,
-                            success:function (res) {
-                                console.warn(JSON.stringify(res))
-                            }
-                        });
-                    }else{
-                        showToast({
-                            title:data.error_msg,
-                            icon:'smile',
-                            duration:3000,
-                            mask:true,
-                            success:function (res) {
-                                console.warn(JSON.stringify(res))
-                            }
-                        });
-                    }
-                },
-                error:function(data){
-                    //donothing
-                    showToast({
-                        title:"后台发生处理错误",
-                        icon:'meh',
-                        duration:3000,
-                        mask:true,
-                        success:function (res) {
-                            console.warn(JSON.stringify(res))
-                        }
-                    });
-                }
-            });
-            return false;
-        }
-
-        function Hints() {
-            var v=document.getElementById("scrollOne");
-            v.innerHTML="<span class=\"span_lineNo\" id=\"1\">1&nbsp;&nbsp;&nbsp;&nbsp;</span>bpm:Express rhythmic speed.&nbsp;&nbsp; <button class=\"bpm_btn bpm_btn-tooltip btn-sequencer\" id=\"sequencer-visible-btn\" aria-label=\"BPM\"><i class=\"fa fa-th\"></i></button>&nbsp;<span class=\"span_KeyofBPM span_text_hover\">BPM&nbsp;</span>;<br>\n" +
-                "                            <span class=\"span_lineNo\" id=\"2\">2&nbsp;&nbsp;&nbsp;&nbsp;</span>times:Represents the number of hits.(you could never end it)&nbsp;&nbsp;<span class=\"span_KeyofTimes span_text_hover\">TIMES&nbsp;</span>;<br>\n" +
-                "                            <span class=\"span_lineNo\" id=\"3\">3&nbsp;&nbsp;&nbsp;&nbsp;</span>if/elese,while:Same as java or other language can do&nbsp;&nbsp;<span class=\"span_KeyofIFELSE span_text_hover\">IF&nbsp;</span>;<span class=\"span_KeyofIFELSE span_text_hover\">ELSE&nbsp;</span>;<span class=\"span_KeyofWhile span_text_hover\">WHILE&nbsp;</span>;<br>\n" +
-                "                            <span class=\"span_lineNo\" id=\"4\">3&nbsp;&nbsp;&nbsp;&nbsp;</span>rhy:Represent a beat.(short for rhythm)&nbsp;&nbsp;<span class=\"span_KeyofRHY span_text_hover\">RHY&nbsp;</span><br/>\n" +
-                "                            <span class=\"span_lineNo\" id=\"5\">4&nbsp;&nbsp;&nbsp;&nbsp;</span>sn:<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/snare.png\" onclick=\"img_snare();\">;&nbsp;fl:<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/floor_tom.png\" onclick=\"img_floorTom();\">;&nbsp;hi:<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/hi_hat.png\" onclick=\"img_hihat();\">;&nbsp;bi:<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/left_tom.png\" onclick=\"img_leftTom();\">;&nbsp;sm:<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/right_tom.png\" onclick=\"img_rightTom();\">;&nbsp;ki:<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/kick.png\" onclick=\"img_kick();\">;&nbsp;cr:<img class=\"\" style=\"height: 30px;width: 30px\" src=\"../../assets/images/proimage/crash.png\" onclick=\"img_crash();\"><br>\n" +
-                "                      ";
-        }
-    </script>
 </head>
 
 
@@ -271,16 +178,16 @@
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/"/>">Home</a>
+                                    <a   href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/programmer"/>">Programmer</a>
+                                    <a   href="<pro:url value="/programmer"/>">Programmer</a>
+                                </li>
+                                <li>
+                                    <a   href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
                                 <li class="active">
-                                    <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
+                                    <a   href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
                                     <a href="#blog">blog</a>
@@ -312,9 +219,10 @@
         </div>
         <div class="row" >
             <div class="col-md-7">
-                <div class='box box1' id='wrapper1'>
+                <div class='box box1'>
                     <div class="scroll textHint span_all"
-                         id="scrollOne"
+                         style="overflow: scroll"
+                         id="scrollOne" scrolling="yes"
                     >
                         ${analyseCode}
                     </div>
@@ -324,7 +232,7 @@
                 <form>
                     <textarea
                             id="codeTextarea" rows="13" cols="46" spellcheck="false"
-                            class="textbox" style="visibility: hidden" scrolling="yes"
+                            class="textbox" style="visibility: hidden"
                     >${template_promusician}</textarea>
                 </form>
             </div>
@@ -334,7 +242,7 @@
                         <%--pro_close();CheckAndRun()--%>
                         <a href="javascript:void(0)" style="background: #fe942f;">
 
-                            Hints
+                            Follow
                         </a>
                     </div>
                     <div class="col-md-6">

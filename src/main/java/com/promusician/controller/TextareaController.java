@@ -18,10 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -70,9 +67,10 @@ public class TextareaController {
             logger.debug("code为空");
         }
 
-//        logger.debug(analyse_text);
-        //绝对路径
-        Util.saveFile(code,"src/main/resources/data/stone"+title+".stone");
+//        logger.debug(analyse_text); 
+//        logger.debug(request.getSession().getServletContext().getRealPath(request.getRequestURI()));
+//        logger.debug(TextareaController.class.getResource("/"));
+        Util.saveFile(code,"/res/"+title+".stone");
         commitService.CheckandCommit(description,title);
         return "success_commit";
     }

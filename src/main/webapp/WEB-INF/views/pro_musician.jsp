@@ -271,16 +271,16 @@
                         <nav id="nav_mobile_menu">
                             <ul id="navigation">
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/"/>">Home</a>
+                                    <a   href="<pro:url value="/"/>">Home</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/programmer"/>">Programmer</a>
+                                    <a   href="<pro:url value="/programmer"/>">Programmer</a>
                                 </li>
                                 <li class="active">
-                                    <a target="_blank" href="<pro:url value="/musician"/>">Musician</a>
+                                    <a   href="<pro:url value="/musician"/>">Musician</a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="<pro:url value="/gallery"/>">Gallery</a>
+                                    <a   href="<pro:url value="/gallery"/>">Gallery</a>
                                 </li>
                                 <li>
                                     <a href="#blog">blog</a>
@@ -347,7 +347,7 @@
                         </a>
                     </div>
                     <div class="col-md-12">
-                        <a href="https://blog.csdn.net/No_Game_No_Life_/article/details/84398985" target="_blank" style="background: #feb52f;">
+                        <a href="https://blog.csdn.net/No_Game_No_Life_/article/details/84398985"   style="background: #feb52f;">
 
                             Forum
                         </a>

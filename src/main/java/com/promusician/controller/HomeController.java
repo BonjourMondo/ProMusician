@@ -72,7 +72,10 @@ public class HomeController {
         //相对路径
         String text="";
         try {
-            InputStream in = HomeController.class.getClassLoader().getResourceAsStream(path);
+            //fix file not found exception
+            File file=new File(path);
+            InputStream in=new FileInputStream(file);
+//            InputStream in = HomeController.class.getClassLoader().getResourceAsStream(path);
 //            logger.debug(in.toString());
             text= Util.inputStreamToString(in);
         }catch (Exception e){

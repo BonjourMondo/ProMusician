@@ -14,6 +14,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import java.util.Collections;
 import java.util.Properties;
+import java.util.Random;
 
 @Component
 public class KafkaMessageConsumer extends Thread{
@@ -47,9 +48,13 @@ public class KafkaMessageConsumer extends Thread{
                         galleryDTO.setDescription(s[1]);
                     if (!StringUtils.isEmpty(s[0])) {
                         galleryDTO.setTitle(s[0]);
-                        galleryDTO.setFile_url("data/stone/"+s[0]+".stone");
+                        galleryDTO.setFile_url(System.getProperty("user.dir")+"/res/"+s[0]+".stone");
                     }
-                    galleryDTO.setImg_url("assets/stone/counting_stars.png");
+                    //生成伪随机数的图片
+                    Random rand =new Random();
+                    int i=rand.nextInt(18);
+                    //save png
+                    galleryDTO.setImg_url("assets/images/gallery/demo"+i+".png");
                     commitDatebaseService.saveMusic(galleryDTO);
 //                    log.debug("the select id's name is "+music.getName());
                 }

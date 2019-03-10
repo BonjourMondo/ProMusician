@@ -9,6 +9,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Random;
+
 @Service("commitservice")
 public class CommitServiceImpl implements CommitService{
     public static Logger logger = LoggerFactory.getLogger(CommitServiceImpl.class);
@@ -27,8 +29,12 @@ public class CommitServiceImpl implements CommitService{
             if (!StringUtils.isEmpty(title))
                 galleryDTO.setTitle(title);
             //后期再改
-            galleryDTO.setFile_url("data/stone/"+title+".stone");
-            galleryDTO.setImg_url("assets/stone/counting_stars.png");
+            galleryDTO.setFile_url(System.getProperty("user.dir")+"/res/"+title+".stone");
+            //生成伪随机数的图片
+            Random rand =new Random();
+            int i;
+            i=rand.nextInt(18);
+            galleryDTO.setImg_url("assets/images/gallery/demo"+i+".png");
             musicMapper.saveMusic(galleryDTO);
         }catch (Exception e){
             try {

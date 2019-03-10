@@ -227,10 +227,11 @@ public class Util {
 
 
     public static void saveFile(String content,String path) {
-
+//        logger.debug(String.valueOf(Util.class.getResource("/")));
+//        logger.debug(System.getProperty("user.dir"));
         FileWriter fwriter = null;
         try {
-            fwriter = new FileWriter(path);
+            fwriter = new FileWriter(System.getProperty("user.dir")+path);
             fwriter.write(content);
         } catch (IOException ex) {
             ex.printStackTrace();
